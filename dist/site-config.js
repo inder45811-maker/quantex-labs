@@ -1,2 +1,1 @@
-// Set the official WhatsApp or Telegram invite URL here when available.
-window.QUANTEX_GROUP_LINK = "";
+window.QUANTEX_SITE={"mode":"preview","channels":{"whatsapp":"","telegram":""},"catalog":[{"slug":"bpc-157","name":"BPC-157"},{"slug":"tb-500","name":"TB-500"},{"slug":"ghk-cu","name":"GHK-Cu"},{"slug":"ipamorelin","name":"Ipamorelin"},{"slug":"cjc-1295","name":"CJC-1295"},{"slug":"mots-c","name":"MOTS-c"}]};

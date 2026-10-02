@@ -1,0 +1,826 @@
+{
+  "startedAt": "2026-10-02T16:15:17.871Z",
+  "baseUrl": "http://127.0.0.1:4175",
+  "checks": [
+    {
+      "name": "Normal motion loads and reveals /",
+      "status": "passed",
+      "details": {
+        "animationsStarted": 20,
+        "scrollStops": 6,
+        "visibleLinksChecked": 34
+      }
+    },
+    {
+      "name": "Normal motion loads and reveals /products",
+      "status": "passed",
+      "details": {
+        "animationsStarted": 14,
+        "scrollStops": 4,
+        "visibleLinksChecked": 30
+      }
+    },
+    {
+      "name": "Normal motion loads and reveals /quality",
+      "status": "passed",
+      "details": {
+        "animationsStarted": 12,
+        "scrollStops": 4,
+        "visibleLinksChecked": 12
+      }
+    },
+    {
+      "name": "Normal motion loads and reveals /about",
+      "status": "passed",
+      "details": {
+        "animationsStarted": 9,
+        "scrollStops": 4,
+        "visibleLinksChecked": 12
+      }
+    },
+    {
+      "name": "Normal motion loads and reveals /contact",
+      "status": "passed",
+      "details": {
+        "animationsStarted": 13,
+        "scrollStops": 4,
+        "visibleLinksChecked": 12
+      }
+    },
+    {
+      "name": "Normal motion loads and reveals /faq",
+      "status": "passed",
+      "details": {
+        "animationsStarted": 12,
+        "scrollStops": 4,
+        "visibleLinksChecked": 11
+      }
+    },
+    {
+      "name": "Normal motion loads and reveals /products/bpc-157",
+      "status": "passed",
+      "details": {
+        "animationsStarted": 10,
+        "scrollStops": 4,
+        "visibleLinksChecked": 17
+      }
+    },
+    {
+      "name": "Normal motion loads and reveals /products/tb-500",
+      "status": "passed",
+      "details": {
+        "animationsStarted": 10,
+        "scrollStops": 4,
+        "visibleLinksChecked": 17
+      }
+    },
+    {
+      "name": "Normal motion loads and reveals /products/ghk-cu",
+      "status": "passed",
+      "details": {
+        "animationsStarted": 10,
+        "scrollStops": 4,
+        "visibleLinksChecked": 17
+      }
+    },
+    {
+      "name": "Normal motion loads and reveals /products/ipamorelin",
+      "status": "passed",
+      "details": {
+        "animationsStarted": 10,
+        "scrollStops": 4,
+        "visibleLinksChecked": 17
+      }
+    },
+    {
+      "name": "Normal motion loads and reveals /products/cjc-1295",
+      "status": "passed",
+      "details": {
+        "animationsStarted": 10,
+        "scrollStops": 4,
+        "visibleLinksChecked": 17
+      }
+    },
+    {
+      "name": "Normal motion loads and reveals /products/mots-c",
+      "status": "passed",
+      "details": {
+        "animationsStarted": 10,
+        "scrollStops": 4,
+        "visibleLinksChecked": 17
+      }
+    },
+    {
+      "name": "FAQ opening and closing animate and settle",
+      "status": "passed",
+      "details": {
+        "closed": {
+          "open": false,
+          "height": 82.6875,
+          "inlineHeight": "",
+          "heightAnimations": []
+        },
+        "opening": {
+          "open": true,
+          "height": 142.34375,
+          "inlineHeight": "83px",
+          "heightAnimations": [
+            {
+              "playState": "running",
+              "currentTime": 83.40599999834586
+            }
+          ]
+        },
+        "opened": {
+          "open": true,
+          "height": 161.875,
+          "inlineHeight": "",
+          "heightAnimations": []
+        },
+        "closing": {
+          "open": true,
+          "height": 101.90625,
+          "inlineHeight": "162px",
+          "heightAnimations": [
+            {
+              "playState": "running",
+              "currentTime": 83.36599999999983
+            }
+          ]
+        },
+        "final": {
+          "open": false,
+          "height": 82.6875,
+          "inlineHeight": "",
+          "heightAnimations": []
+        }
+      }
+    },
+    {
+      "name": "FAQ five rapid toggles and keyboard remain correct",
+      "status": "passed",
+      "details": {
+        "rapid": {
+          "open": true,
+          "height": 161.875,
+          "inlineHeight": "",
+          "heightAnimations": []
+        }
+      }
+    },
+    {
+      "name": "Animated catalog filters preserve result counts",
+      "status": "passed",
+      "details": [
+        {
+          "category": "research",
+          "count": 4,
+          "status": "4 compounds"
+        },
+        {
+          "category": "cellular",
+          "count": 2,
+          "status": "2 compounds"
+        },
+        {
+          "category": "all",
+          "count": 6,
+          "status": "6 compounds"
+        }
+      ]
+    },
+    {
+      "name": "Keyboard DNA left and right change its paused render",
+      "status": "passed",
+      "details": {
+        "initial": "e941e83af7f5ae6d1a8085db6f1999ccb8dccd9d94f99ba2450732e0985b2c09",
+        "left": "e4ec59fe3714005303f895c2182f48a080d3d26d5644bd2c3fb1abb0abba5d1f",
+        "right": "7f8fd61d2f84a10ece1be7a7cf3eebd92023e3e08346d7e7416ad07d9f3e42b1"
+      }
+    },
+    {
+      "name": "Mobile menu Escape and outside click close it",
+      "status": "passed"
+    },
+    {
+      "name": "Settled mobile screenshot /",
+      "status": "passed"
+    },
+    {
+      "name": "Settled mobile screenshot /products",
+      "status": "passed"
+    },
+    {
+      "name": "Settled mobile screenshot /products/bpc-157",
+      "status": "passed"
+    },
+    {
+      "name": "Settled mobile screenshot /faq",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion has no animations or hover transitions /",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion has no animations or hover transitions /products",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion has no animations or hover transitions /quality",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion has no animations or hover transitions /about",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion has no animations or hover transitions /contact",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion has no animations or hover transitions /faq",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion has no animations or hover transitions /products/bpc-157",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion has no animations or hover transitions /products/tb-500",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion has no animations or hover transitions /products/ghk-cu",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion has no animations or hover transitions /products/ipamorelin",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion has no animations or hover transitions /products/cjc-1295",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion has no animations or hover transitions /products/mots-c",
+      "status": "passed"
+    },
+    {
+      "name": "FAQ remains native without JavaScript",
+      "status": "passed"
+    },
+    {
+      "name": "Initial lab performance metrics /",
+      "status": "passed",
+      "details": {
+        "transferredBytes": 1114061,
+        "lcpMs": 2032,
+        "cls": 0,
+        "ttfbMs": 24,
+        "note": "Lab observations; no field-performance or certification claim."
+      }
+    },
+    {
+      "name": "Initial lab performance metrics /products",
+      "status": "passed",
+      "details": {
+        "transferredBytes": 71081,
+        "lcpMs": 1644,
+        "cls": 0,
+        "ttfbMs": 22.400000035762787,
+        "note": "Lab observations; no field-performance or certification claim."
+      }
+    },
+    {
+      "name": "No external HTTP requests, broken local resources or runtime errors",
+      "status": "passed",
+      "details": {
+        "outsideOriginRequests": 0,
+        "failedLocalRequests": 0,
+        "runtimeErrors": 0
+      }
+    }
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "title": "Quantex Labs | Research Peptide Catalog",
+      "h1": "A clearer path to peptide research.",
+      "animationsStarted": 20,
+      "scrollStops": 6,
+      "visibleLinksChecked": 34
+    },
+    {
+      "route": "/products",
+      "title": "Research Peptide Catalog | Quantex Labs",
+      "h1": "Explore the collection.",
+      "animationsStarted": 14,
+      "scrollStops": 4,
+      "visibleLinksChecked": 30
+    },
+    {
+      "route": "/quality",
+      "title": "Product Documentation & Information | Quantex Labs",
+      "h1": "Details that deserve clarity.",
+      "animationsStarted": 12,
+      "scrollStops": 4,
+      "visibleLinksChecked": 12
+    },
+    {
+      "route": "/about",
+      "title": "About Quantex Labs | Research Materials",
+      "h1": "Research materials.A clearer approach.",
+      "animationsStarted": 9,
+      "scrollStops": 4,
+      "visibleLinksChecked": 12
+    },
+    {
+      "route": "/contact",
+      "title": "Contact & Ordering Enquiries | Quantex Labs",
+      "h1": "Let’s talk research.",
+      "animationsStarted": 13,
+      "scrollStops": 4,
+      "visibleLinksChecked": 12
+    },
+    {
+      "route": "/faq",
+      "title": "Research Material FAQs | Quantex Labs",
+      "h1": "Answers, with clarity.",
+      "animationsStarted": 12,
+      "scrollStops": 4,
+      "visibleLinksChecked": 11
+    },
+    {
+      "route": "/products/bpc-157",
+      "title": "BPC-157 5 mg | Quantex Labs",
+      "h1": "BPC-157 5 mg",
+      "animationsStarted": 10,
+      "scrollStops": 4,
+      "visibleLinksChecked": 17
+    },
+    {
+      "route": "/products/tb-500",
+      "title": "TB-500 5 mg | Quantex Labs",
+      "h1": "TB-500 5 mg",
+      "animationsStarted": 10,
+      "scrollStops": 4,
+      "visibleLinksChecked": 17
+    },
+    {
+      "route": "/products/ghk-cu",
+      "title": "GHK-Cu 50 mg | Quantex Labs",
+      "h1": "GHK-Cu 50 mg",
+      "animationsStarted": 10,
+      "scrollStops": 4,
+      "visibleLinksChecked": 17
+    },
+    {
+      "route": "/products/ipamorelin",
+      "title": "Ipamorelin 10 mg | Quantex Labs",
+      "h1": "Ipamorelin 10 mg",
+      "animationsStarted": 10,
+      "scrollStops": 4,
+      "visibleLinksChecked": 17
+    },
+    {
+      "route": "/products/cjc-1295",
+      "title": "CJC-1295 10 mg | Quantex Labs",
+      "h1": "CJC-1295 10 mg",
+      "animationsStarted": 10,
+      "scrollStops": 4,
+      "visibleLinksChecked": 17
+    },
+    {
+      "route": "/products/mots-c",
+      "title": "MOTS-c 10 mg | Quantex Labs",
+      "h1": "MOTS-c 10 mg",
+      "animationsStarted": 10,
+      "scrollStops": 4,
+      "visibleLinksChecked": 17
+    }
+  ],
+  "outsideOriginRequests": [],
+  "failedLocalRequests": [],
+  "runtimeErrors": [],
+  "screenshots": [
+    "C:\\Users\\IReyat\\.codex\\visualizations\\2026\\10\\02\\01a0fc56-6255-7303-98d4-9f85bc25021a\\motion-home-desktop.png",
+    "C:\\Users\\IReyat\\.codex\\visualizations\\2026\\10\\02\\01a0fc56-6255-7303-98d4-9f85bc25021a\\motion-catalog-desktop.png",
+    "C:\\Users\\IReyat\\.codex\\visualizations\\2026\\10\\02\\01a0fc56-6255-7303-98d4-9f85bc25021a\\motion-home-mobile.png",
+    "C:\\Users\\IReyat\\.codex\\visualizations\\2026\\10\\02\\01a0fc56-6255-7303-98d4-9f85bc25021a\\motion-catalog-mobile.png",
+    "C:\\Users\\IReyat\\.codex\\visualizations\\2026\\10\\02\\01a0fc56-6255-7303-98d4-9f85bc25021a\\motion-detail-mobile.png",
+    "C:\\Users\\IReyat\\.codex\\visualizations\\2026\\10\\02\\01a0fc56-6255-7303-98d4-9f85bc25021a\\motion-faq-mobile.png"
+  ],
+  "labMetrics": [
+    {
+      "route": "/",
+      "environment": "Fresh foreground headless Chrome context, 1440px, SwiftShader, no network or CPU throttling; initial load only",
+      "paintWaitTimedOut": false,
+      "navigation": {
+        "name": "http://127.0.0.1:4175/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 689.8000000119209,
+        "navigationId": 4913,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 5.300000011920929,
+        "domainLookupStart": 5.300000011920929,
+        "domainLookupEnd": 5.300000011920929,
+        "connectStart": 5.300000011920929,
+        "secureConnectionStart": 0,
+        "connectEnd": 5.300000011920929,
+        "requestStart": 9.899999976158142,
+        "responseStart": 24,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 24,
+        "responseEnd": 26.69999998807907,
+        "transferSize": 14205,
+        "encodedBodySize": 13905,
+        "decodedBodySize": 13905,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 114.30000001192093,
+        "domContentLoadedEventStart": 296.39999997615814,
+        "domContentLoadedEventEnd": 297,
+        "domComplete": 689.6000000238419,
+        "loadEventStart": 689.8000000119209,
+        "loadEventEnd": 689.8000000119209,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:4175/assets/fonts/space-grotesk-latin.woff2",
+          "initiatorType": "link",
+          "duration": 33.80000001192093,
+          "transferSize": 22588,
+          "encodedBodySize": 22288,
+          "decodedBodySize": 22288
+        },
+        {
+          "name": "http://127.0.0.1:4175/styles.css?v=46d41f5b0890",
+          "initiatorType": "link",
+          "duration": 29.600000023841858,
+          "transferSize": 26737,
+          "encodedBodySize": 26437,
+          "decodedBodySize": 26437
+        },
+        {
+          "name": "http://127.0.0.1:4175/assets/dna-fallback.svg",
+          "initiatorType": "img",
+          "duration": 32.5,
+          "transferSize": 211296,
+          "encodedBodySize": 210996,
+          "decodedBodySize": 210996
+        },
+        {
+          "name": "http://127.0.0.1:4175/site-config.js?v=46d41f5b0890",
+          "initiatorType": "script",
+          "duration": 49.09999996423721,
+          "transferSize": 611,
+          "encodedBodySize": 311,
+          "decodedBodySize": 311
+        },
+        {
+          "name": "http://127.0.0.1:4175/app.js?v=46d41f5b0890",
+          "initiatorType": "script",
+          "duration": 51.80000001192093,
+          "transferSize": 3791,
+          "encodedBodySize": 3491,
+          "decodedBodySize": 3491
+        },
+        {
+          "name": "http://127.0.0.1:4175/motion.js?v=46d41f5b0890",
+          "initiatorType": "script",
+          "duration": 50.80000001192093,
+          "transferSize": 3645,
+          "encodedBodySize": 3345,
+          "decodedBodySize": 3345
+        },
+        {
+          "name": "http://127.0.0.1:4175/dna-loader.js?v=46d41f5b0890",
+          "initiatorType": "script",
+          "duration": 27.900000035762787,
+          "transferSize": 1025,
+          "encodedBodySize": 725,
+          "decodedBodySize": 725
+        },
+        {
+          "name": "http://127.0.0.1:4175/assets/logo.svg",
+          "initiatorType": "other",
+          "duration": 16.80000001192093,
+          "transferSize": 573,
+          "encodedBodySize": 273,
+          "decodedBodySize": 273
+        },
+        {
+          "name": "http://127.0.0.1:4175/dna-helix.js?v=46d41f5b0890",
+          "initiatorType": "script",
+          "duration": 11.899999976158142,
+          "transferSize": 20004,
+          "encodedBodySize": 19704,
+          "decodedBodySize": 19704
+        },
+        {
+          "name": "http://127.0.0.1:4175/vendor/three.module.min.js",
+          "initiatorType": "script",
+          "duration": 30.5,
+          "transferSize": 393132,
+          "encodedBodySize": 392832,
+          "decodedBodySize": 392832
+        },
+        {
+          "name": "http://127.0.0.1:4175/vendor/three.core.js",
+          "initiatorType": "script",
+          "duration": 20.399999976158142,
+          "transferSize": 337,
+          "encodedBodySize": 37,
+          "decodedBodySize": 37
+        },
+        {
+          "name": "http://127.0.0.1:4175/vendor/three.core.min.js",
+          "initiatorType": "script",
+          "duration": 30.19999998807907,
+          "transferSize": 416117,
+          "encodedBodySize": 415817,
+          "decodedBodySize": 415817
+        }
+      ],
+      "paints": [
+        {
+          "name": "first-paint",
+          "startTime": 2032
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 2032
+        }
+      ],
+      "lcp": {
+        "startTime": 2032,
+        "renderTime": 2032,
+        "loadTime": 311.5,
+        "size": 360390,
+        "url": "http://127.0.0.1:4175/assets/dna-fallback.svg",
+        "tag": "IMG",
+        "id": ""
+      },
+      "cls": 0,
+      "layoutShifts": [],
+      "supportedEntryTypes": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "transferredBytes": 1114061,
+      "encodedResourceBytes": 1096256,
+      "decodedResourceBytes": 1096256,
+      "ttfbMs": 24
+    },
+    {
+      "route": "/products",
+      "environment": "Fresh foreground headless Chrome context, 1440px, SwiftShader, no network or CPU throttling; initial load only",
+      "paintWaitTimedOut": false,
+      "navigation": {
+        "name": "http://127.0.0.1:4175/products",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 486.7000000476837,
+        "navigationId": 442,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 3.400000035762787,
+        "domainLookupStart": 3.400000035762787,
+        "domainLookupEnd": 3.400000035762787,
+        "connectStart": 3.400000035762787,
+        "secureConnectionStart": 0,
+        "connectEnd": 3.400000035762787,
+        "requestStart": 8,
+        "responseStart": 22.400000035762787,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 22.400000035762787,
+        "responseEnd": 24.600000023841858,
+        "transferSize": 13136,
+        "encodedBodySize": 12836,
+        "decodedBodySize": 12836,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 106.70000004768372,
+        "domContentLoadedEventStart": 139.80000001192093,
+        "domContentLoadedEventEnd": 140.80000001192093,
+        "domComplete": 485.10000002384186,
+        "loadEventStart": 486.5,
+        "loadEventEnd": 486.7000000476837,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:4175/assets/fonts/space-grotesk-latin.woff2",
+          "initiatorType": "link",
+          "duration": 21,
+          "transferSize": 22588,
+          "encodedBodySize": 22288,
+          "decodedBodySize": 22288
+        },
+        {
+          "name": "http://127.0.0.1:4175/styles.css?v=46d41f5b0890",
+          "initiatorType": "link",
+          "duration": 22.19999998807907,
+          "transferSize": 26737,
+          "encodedBodySize": 26437,
+          "decodedBodySize": 26437
+        },
+        {
+          "name": "http://127.0.0.1:4175/site-config.js?v=46d41f5b0890",
+          "initiatorType": "script",
+          "duration": 38,
+          "transferSize": 611,
+          "encodedBodySize": 311,
+          "decodedBodySize": 311
+        },
+        {
+          "name": "http://127.0.0.1:4175/app.js?v=46d41f5b0890",
+          "initiatorType": "script",
+          "duration": 45.69999998807907,
+          "transferSize": 3791,
+          "encodedBodySize": 3491,
+          "decodedBodySize": 3491
+        },
+        {
+          "name": "http://127.0.0.1:4175/motion.js?v=46d41f5b0890",
+          "initiatorType": "script",
+          "duration": 46.09999996423721,
+          "transferSize": 3645,
+          "encodedBodySize": 3345,
+          "decodedBodySize": 3345
+        },
+        {
+          "name": "http://127.0.0.1:4175/assets/logo.svg",
+          "initiatorType": "other",
+          "duration": 25.69999998807907,
+          "transferSize": 573,
+          "encodedBodySize": 273,
+          "decodedBodySize": 273
+        }
+      ],
+      "paints": [
+        {
+          "name": "first-paint",
+          "startTime": 776
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 776
+        }
+      ],
+      "lcp": {
+        "startTime": 1644,
+        "renderTime": 1644,
+        "loadTime": 0,
+        "size": 54600,
+        "url": "",
+        "tag": "H1",
+        "id": ""
+      },
+      "cls": 0,
+      "layoutShifts": [],
+      "supportedEntryTypes": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "transferredBytes": 71081,
+      "encodedResourceBytes": 56145,
+      "decodedResourceBytes": 56145,
+      "ttfbMs": 22.400000035762787
+    }
+  ],
+  "faq": [
+    {
+      "test": "smooth open/close",
+      "closed": {
+        "open": false,
+        "height": 82.6875,
+        "inlineHeight": "",
+        "heightAnimations": []
+      },
+      "opening": {
+        "open": true,
+        "height": 142.34375,
+        "inlineHeight": "83px",
+        "heightAnimations": [
+          {
+            "playState": "running",
+            "currentTime": 83.40599999834586
+          }
+        ]
+      },
+      "opened": {
+        "open": true,
+        "height": 161.875,
+        "inlineHeight": "",
+        "heightAnimations": []
+      },
+      "closing": {
+        "open": true,
+        "height": 101.90625,
+        "inlineHeight": "162px",
+        "heightAnimations": [
+          {
+            "playState": "running",
+            "currentTime": 83.36599999999983
+          }
+        ]
+      },
+      "final": {
+        "open": false,
+        "height": 82.6875,
+        "inlineHeight": "",
+        "heightAnimations": []
+      }
+    },
+    {
+      "test": "five rapid toggles and keyboard",
+      "rapid": {
+        "open": true,
+        "height": 161.875,
+        "inlineHeight": "",
+        "heightAnimations": []
+      }
+    }
+  ],
+  "todos": [],
+  "completedAt": "2026-10-02T16:18:47.150Z",
+  "summary": {
+    "passed": 37,
+    "failed": 0,
+    "todo": 0
+  },
+  "success": true
+}

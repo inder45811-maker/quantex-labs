@@ -1,0 +1,8 @@
+[
+  {"name":"BPC-157","slug":"bpc-157","code":"BPC","strength":"5 mg","category":"research","type":"Research peptide","confirmed":false},
+  {"name":"TB-500","slug":"tb-500","code":"TB","strength":"5 mg","category":"research","type":"Research peptide","confirmed":false},
+  {"name":"GHK-Cu","slug":"ghk-cu","code":"GHK","strength":"50 mg","category":"cellular","type":"Copper peptide","confirmed":false},
+  {"name":"Ipamorelin","slug":"ipamorelin","code":"IPA","strength":"10 mg","category":"research","type":"Research peptide","confirmed":false},
+  {"name":"CJC-1295","slug":"cjc-1295","code":"CJC","strength":"10 mg","category":"research","type":"Research peptide","confirmed":false},
+  {"name":"MOTS-c","slug":"mots-c","code":"MOTS","strength":"10 mg","category":"cellular","type":"Mitochondrial peptide","confirmed":false}
+]

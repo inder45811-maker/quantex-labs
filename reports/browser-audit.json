@@ -1,0 +1,793 @@
+{
+  "startedAt": "2026-10-02T16:14:13.277Z",
+  "baseUrl": "http://127.0.0.1:4175",
+  "checks": [
+    {
+      "name": "Page and metadata /",
+      "status": "passed",
+      "details": {
+        "title": "Quantex Labs | Research Peptide Catalog",
+        "h1": "A clearer path to peptide research.",
+        "canonical": "https://quantex-labs.indi678678.chatgpt.site/"
+      }
+    },
+    {
+      "name": "WCAG AA /",
+      "status": "passed",
+      "details": {
+        "passes": 26,
+        "manualReviewItems": 0
+      }
+    },
+    {
+      "name": "Responsive overflow / @ 320",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow / @ 390",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow / @ 768",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow / @ 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Page and metadata /products",
+      "status": "passed",
+      "details": {
+        "title": "Research Peptide Catalog | Quantex Labs",
+        "h1": "Explore the collection.",
+        "canonical": "https://quantex-labs.indi678678.chatgpt.site/products"
+      }
+    },
+    {
+      "name": "WCAG AA /products",
+      "status": "passed",
+      "details": {
+        "passes": 28,
+        "manualReviewItems": 0
+      }
+    },
+    {
+      "name": "Responsive overflow /products @ 320",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products @ 390",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products @ 768",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products @ 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Page and metadata /quality",
+      "status": "passed",
+      "details": {
+        "title": "Product Documentation & Information | Quantex Labs",
+        "h1": "Details that deserve clarity.",
+        "canonical": "https://quantex-labs.indi678678.chatgpt.site/quality"
+      }
+    },
+    {
+      "name": "WCAG AA /quality",
+      "status": "passed",
+      "details": {
+        "passes": 20,
+        "manualReviewItems": 0
+      }
+    },
+    {
+      "name": "Responsive overflow /quality @ 320",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /quality @ 390",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /quality @ 768",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /quality @ 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Page and metadata /about",
+      "status": "passed",
+      "details": {
+        "title": "About Quantex Labs | Research Materials",
+        "h1": "Research materials.A clearer approach.",
+        "canonical": "https://quantex-labs.indi678678.chatgpt.site/about"
+      }
+    },
+    {
+      "name": "WCAG AA /about",
+      "status": "passed",
+      "details": {
+        "passes": 18,
+        "manualReviewItems": 0
+      }
+    },
+    {
+      "name": "Responsive overflow /about @ 320",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /about @ 390",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /about @ 768",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /about @ 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Page and metadata /contact",
+      "status": "passed",
+      "details": {
+        "title": "Contact & Ordering Enquiries | Quantex Labs",
+        "h1": "Let’s talk research.",
+        "canonical": "https://quantex-labs.indi678678.chatgpt.site/contact"
+      }
+    },
+    {
+      "name": "WCAG AA /contact",
+      "status": "passed",
+      "details": {
+        "passes": 18,
+        "manualReviewItems": 0
+      }
+    },
+    {
+      "name": "Responsive overflow /contact @ 320",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /contact @ 390",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /contact @ 768",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /contact @ 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Page and metadata /faq",
+      "status": "passed",
+      "details": {
+        "title": "Research Material FAQs | Quantex Labs",
+        "h1": "Answers, with clarity.",
+        "canonical": "https://quantex-labs.indi678678.chatgpt.site/faq"
+      }
+    },
+    {
+      "name": "WCAG AA /faq",
+      "status": "passed",
+      "details": {
+        "passes": 20,
+        "manualReviewItems": 0
+      }
+    },
+    {
+      "name": "Responsive overflow /faq @ 320",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /faq @ 390",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /faq @ 768",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /faq @ 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Page and metadata /products/bpc-157",
+      "status": "passed",
+      "details": {
+        "title": "BPC-157 5 mg | Quantex Labs",
+        "h1": "BPC-157 5 mg",
+        "canonical": "https://quantex-labs.indi678678.chatgpt.site/products/bpc-157"
+      }
+    },
+    {
+      "name": "WCAG AA /products/bpc-157",
+      "status": "passed",
+      "details": {
+        "passes": 20,
+        "manualReviewItems": 0
+      }
+    },
+    {
+      "name": "Responsive overflow /products/bpc-157 @ 320",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products/bpc-157 @ 390",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products/bpc-157 @ 768",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products/bpc-157 @ 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Page and metadata /products/tb-500",
+      "status": "passed",
+      "details": {
+        "title": "TB-500 5 mg | Quantex Labs",
+        "h1": "TB-500 5 mg",
+        "canonical": "https://quantex-labs.indi678678.chatgpt.site/products/tb-500"
+      }
+    },
+    {
+      "name": "WCAG AA /products/tb-500",
+      "status": "passed",
+      "details": {
+        "passes": 20,
+        "manualReviewItems": 0
+      }
+    },
+    {
+      "name": "Responsive overflow /products/tb-500 @ 320",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products/tb-500 @ 390",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products/tb-500 @ 768",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products/tb-500 @ 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Page and metadata /products/ghk-cu",
+      "status": "passed",
+      "details": {
+        "title": "GHK-Cu 50 mg | Quantex Labs",
+        "h1": "GHK-Cu 50 mg",
+        "canonical": "https://quantex-labs.indi678678.chatgpt.site/products/ghk-cu"
+      }
+    },
+    {
+      "name": "WCAG AA /products/ghk-cu",
+      "status": "passed",
+      "details": {
+        "passes": 20,
+        "manualReviewItems": 0
+      }
+    },
+    {
+      "name": "Responsive overflow /products/ghk-cu @ 320",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products/ghk-cu @ 390",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products/ghk-cu @ 768",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products/ghk-cu @ 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Page and metadata /products/ipamorelin",
+      "status": "passed",
+      "details": {
+        "title": "Ipamorelin 10 mg | Quantex Labs",
+        "h1": "Ipamorelin 10 mg",
+        "canonical": "https://quantex-labs.indi678678.chatgpt.site/products/ipamorelin"
+      }
+    },
+    {
+      "name": "WCAG AA /products/ipamorelin",
+      "status": "passed",
+      "details": {
+        "passes": 20,
+        "manualReviewItems": 0
+      }
+    },
+    {
+      "name": "Responsive overflow /products/ipamorelin @ 320",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products/ipamorelin @ 390",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products/ipamorelin @ 768",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products/ipamorelin @ 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Page and metadata /products/cjc-1295",
+      "status": "passed",
+      "details": {
+        "title": "CJC-1295 10 mg | Quantex Labs",
+        "h1": "CJC-1295 10 mg",
+        "canonical": "https://quantex-labs.indi678678.chatgpt.site/products/cjc-1295"
+      }
+    },
+    {
+      "name": "WCAG AA /products/cjc-1295",
+      "status": "passed",
+      "details": {
+        "passes": 20,
+        "manualReviewItems": 0
+      }
+    },
+    {
+      "name": "Responsive overflow /products/cjc-1295 @ 320",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products/cjc-1295 @ 390",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products/cjc-1295 @ 768",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products/cjc-1295 @ 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Page and metadata /products/mots-c",
+      "status": "passed",
+      "details": {
+        "title": "MOTS-c 10 mg | Quantex Labs",
+        "h1": "MOTS-c 10 mg",
+        "canonical": "https://quantex-labs.indi678678.chatgpt.site/products/mots-c"
+      }
+    },
+    {
+      "name": "WCAG AA /products/mots-c",
+      "status": "passed",
+      "details": {
+        "passes": 20,
+        "manualReviewItems": 0
+      }
+    },
+    {
+      "name": "Responsive overflow /products/mots-c @ 320",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products/mots-c @ 390",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products/mots-c @ 768",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive overflow /products/mots-c @ 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Unique page titles, H1s, descriptions and canonicals",
+      "status": "passed"
+    },
+    {
+      "name": "Internal anchors resolve",
+      "status": "passed",
+      "details": {
+        "checked": 18
+      }
+    },
+    {
+      "name": "Missing route returns 404",
+      "status": "passed"
+    },
+    {
+      "name": "Mobile menu Escape restores focus",
+      "status": "passed"
+    },
+    {
+      "name": "Tablet hero CTA remains clickable",
+      "status": "passed"
+    },
+    {
+      "name": "Catalogue filtering, search, empty state and reset",
+      "status": "passed",
+      "details": {
+        "total": 6
+      }
+    },
+    {
+      "name": "Product enquiry preserves compound context",
+      "status": "passed",
+      "details": {
+        "href": "http://127.0.0.1:4175/contact?compound=bpc-157",
+        "context": "Your enquiry: BPC-157. Review compound details"
+      }
+    },
+    {
+      "name": "Unconfigured group does not expose a fake active purchase link",
+      "status": "passed",
+      "details": {
+        "configuredChannels": [],
+        "activeChannelAnchors": 0
+      }
+    },
+    {
+      "name": "DNA drag, pause, reset and reduced motion",
+      "status": "passed"
+    },
+    {
+      "name": "Paused and settled DNA has no RAF scheduling",
+      "status": "passed",
+      "details": {
+        "state": "paused and settled",
+        "before": {
+          "requests": 122,
+          "callbacks": 122,
+          "cancellations": 0,
+          "pending": 0,
+          "at": 15176.399999976158
+        },
+        "after": {
+          "requests": 122,
+          "callbacks": 122,
+          "cancellations": 0,
+          "pending": 0,
+          "at": 15684
+        },
+        "elapsedMs": 507.60000002384186,
+        "requests": 0,
+        "callbacks": 0,
+        "cancellations": 0,
+        "pendingAtEnd": 0
+      }
+    },
+    {
+      "name": "No-JavaScript catalog, navigation and static DNA",
+      "status": "passed"
+    },
+    {
+      "name": "Blocked DNA module retains visible fallback",
+      "status": "passed"
+    },
+    {
+      "name": "WebGL context loss retains visible fallback",
+      "status": "passed",
+      "details": {
+        "staticVisible": false,
+        "interactiveVisible": true
+      }
+    },
+    {
+      "name": "No unexpected runtime errors or failed local requests",
+      "status": "passed",
+      "details": {
+        "errors": 0,
+        "failedLocalRequests": 0
+      }
+    }
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "title": "Quantex Labs | Research Peptide Catalog",
+      "h1": [
+        "A clearer path to peptide research."
+      ],
+      "description": "Explore the Quantex Labs research peptide catalog, review compound information and connect through official ordering channels.",
+      "canonical": "https://quantex-labs.indi678678.chatgpt.site/",
+      "mains": 1,
+      "skip": true,
+      "lang": "en",
+      "duplicateIds": []
+    },
+    {
+      "route": "/products",
+      "title": "Research Peptide Catalog | Quantex Labs",
+      "h1": [
+        "Explore the collection."
+      ],
+      "description": "Browse Quantex Labs compound listings, filter by category and review labelled strength, specifications and enquiry information.",
+      "canonical": "https://quantex-labs.indi678678.chatgpt.site/products",
+      "mains": 1,
+      "skip": true,
+      "lang": "en",
+      "duplicateIds": []
+    },
+    {
+      "route": "/quality",
+      "title": "Product Documentation & Information | Quantex Labs",
+      "h1": [
+        "Details that deserve clarity."
+      ],
+      "description": "Learn which product specifications, batch records and supporting documentation to review before enquiring about Quantex Labs research materials.",
+      "canonical": "https://quantex-labs.indi678678.chatgpt.site/quality",
+      "mains": 1,
+      "skip": true,
+      "lang": "en",
+      "duplicateIds": []
+    },
+    {
+      "route": "/about",
+      "title": "About Quantex Labs | Research Materials",
+      "h1": [
+        "Research materials.A clearer approach."
+      ],
+      "description": "Learn about Quantex Labs and its direct approach to research-material discovery, clear product information and official enquiries.",
+      "canonical": "https://quantex-labs.indi678678.chatgpt.site/about",
+      "mains": 1,
+      "skip": true,
+      "lang": "en",
+      "duplicateIds": []
+    },
+    {
+      "route": "/contact",
+      "title": "Contact & Ordering Enquiries | Quantex Labs",
+      "h1": [
+        "Let’s talk research."
+      ],
+      "description": "Find Quantex Labs official WhatsApp and Telegram enquiry channels and the information to confirm before ordering research materials.",
+      "canonical": "https://quantex-labs.indi678678.chatgpt.site/contact",
+      "mains": 1,
+      "skip": true,
+      "lang": "en",
+      "duplicateIds": []
+    },
+    {
+      "route": "/faq",
+      "title": "Research Material FAQs | Quantex Labs",
+      "h1": [
+        "Answers, with clarity."
+      ],
+      "description": "Answers about Quantex Labs research-use materials, sample product strengths, documentation, availability and official ordering channels.",
+      "canonical": "https://quantex-labs.indi678678.chatgpt.site/faq",
+      "mains": 1,
+      "skip": true,
+      "lang": "en",
+      "duplicateIds": []
+    },
+    {
+      "route": "/products/bpc-157",
+      "title": "BPC-157 5 mg | Quantex Labs",
+      "h1": [
+        "BPC-157 5 mg"
+      ],
+      "description": "Review the BPC-157 5 mg sample listing, current specification status and enquiry information at Quantex Labs.",
+      "canonical": "https://quantex-labs.indi678678.chatgpt.site/products/bpc-157",
+      "mains": 1,
+      "skip": true,
+      "lang": "en",
+      "duplicateIds": []
+    },
+    {
+      "route": "/products/tb-500",
+      "title": "TB-500 5 mg | Quantex Labs",
+      "h1": [
+        "TB-500 5 mg"
+      ],
+      "description": "Review the TB-500 5 mg sample listing, current specification status and enquiry information at Quantex Labs.",
+      "canonical": "https://quantex-labs.indi678678.chatgpt.site/products/tb-500",
+      "mains": 1,
+      "skip": true,
+      "lang": "en",
+      "duplicateIds": []
+    },
+    {
+      "route": "/products/ghk-cu",
+      "title": "GHK-Cu 50 mg | Quantex Labs",
+      "h1": [
+        "GHK-Cu 50 mg"
+      ],
+      "description": "Review the GHK-Cu 50 mg sample listing, current specification status and enquiry information at Quantex Labs.",
+      "canonical": "https://quantex-labs.indi678678.chatgpt.site/products/ghk-cu",
+      "mains": 1,
+      "skip": true,
+      "lang": "en",
+      "duplicateIds": []
+    },
+    {
+      "route": "/products/ipamorelin",
+      "title": "Ipamorelin 10 mg | Quantex Labs",
+      "h1": [
+        "Ipamorelin 10 mg"
+      ],
+      "description": "Review the Ipamorelin 10 mg sample listing, current specification status and enquiry information at Quantex Labs.",
+      "canonical": "https://quantex-labs.indi678678.chatgpt.site/products/ipamorelin",
+      "mains": 1,
+      "skip": true,
+      "lang": "en",
+      "duplicateIds": []
+    },
+    {
+      "route": "/products/cjc-1295",
+      "title": "CJC-1295 10 mg | Quantex Labs",
+      "h1": [
+        "CJC-1295 10 mg"
+      ],
+      "description": "Review the CJC-1295 10 mg sample listing, current specification status and enquiry information at Quantex Labs.",
+      "canonical": "https://quantex-labs.indi678678.chatgpt.site/products/cjc-1295",
+      "mains": 1,
+      "skip": true,
+      "lang": "en",
+      "duplicateIds": []
+    },
+    {
+      "route": "/products/mots-c",
+      "title": "MOTS-c 10 mg | Quantex Labs",
+      "h1": [
+        "MOTS-c 10 mg"
+      ],
+      "description": "Review the MOTS-c 10 mg sample listing, current specification status and enquiry information at Quantex Labs.",
+      "canonical": "https://quantex-labs.indi678678.chatgpt.site/products/mots-c",
+      "mains": 1,
+      "skip": true,
+      "lang": "en",
+      "duplicateIds": []
+    }
+  ],
+  "axe": [
+    {
+      "route": "/",
+      "violations": [],
+      "incomplete": [],
+      "passes": 26
+    },
+    {
+      "route": "/products",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "route": "/quality",
+      "violations": [],
+      "incomplete": [],
+      "passes": 20
+    },
+    {
+      "route": "/about",
+      "violations": [],
+      "incomplete": [],
+      "passes": 18
+    },
+    {
+      "route": "/contact",
+      "violations": [],
+      "incomplete": [],
+      "passes": 18
+    },
+    {
+      "route": "/faq",
+      "violations": [],
+      "incomplete": [],
+      "passes": 20
+    },
+    {
+      "route": "/products/bpc-157",
+      "violations": [],
+      "incomplete": [],
+      "passes": 20
+    },
+    {
+      "route": "/products/tb-500",
+      "violations": [],
+      "incomplete": [],
+      "passes": 20
+    },
+    {
+      "route": "/products/ghk-cu",
+      "violations": [],
+      "incomplete": [],
+      "passes": 20
+    },
+    {
+      "route": "/products/ipamorelin",
+      "violations": [],
+      "incomplete": [],
+      "passes": 20
+    },
+    {
+      "route": "/products/cjc-1295",
+      "violations": [],
+      "incomplete": [],
+      "passes": 20
+    },
+    {
+      "route": "/products/mots-c",
+      "violations": [],
+      "incomplete": [],
+      "passes": 20
+    }
+  ],
+  "runtimeErrors": [
+    {
+      "scenario": "blocked-module",
+      "page": "http://127.0.0.1:4175/",
+      "type": "console",
+      "message": "Failed to load resource: net::ERR_FAILED",
+      "location": {
+        "url": "http://127.0.0.1:4175/dna-helix.js?v=c812fdef43e4",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "failedLocalRequests": [],
+  "brokenLinks": [],
+  "screenshots": [
+    "C:\\Users\\IReyat\\.codex\\visualizations\\2026\\10\\02\\01a0fc56-6255-7303-98d4-9f85bc25021a\\audit-home-desktop.png",
+    "C:\\Users\\IReyat\\.codex\\visualizations\\2026\\10\\02\\01a0fc56-6255-7303-98d4-9f85bc25021a\\audit-home-mobile.png",
+    "C:\\Users\\IReyat\\.codex\\visualizations\\2026\\10\\02\\01a0fc56-6255-7303-98d4-9f85bc25021a\\audit-helix-mobile.png",
+    "C:\\Users\\IReyat\\.codex\\visualizations\\2026\\10\\02\\01a0fc56-6255-7303-98d4-9f85bc25021a\\audit-home-interaction.png",
+    "C:\\Users\\IReyat\\.codex\\visualizations\\2026\\10\\02\\01a0fc56-6255-7303-98d4-9f85bc25021a\\audit-dna-module-fallback.png",
+    "C:\\Users\\IReyat\\.codex\\visualizations\\2026\\10\\02\\01a0fc56-6255-7303-98d4-9f85bc25021a\\audit-dna-context-loss-fallback.png"
+  ],
+  "rafMeasurements": [
+    {
+      "state": "paused and settled",
+      "before": {
+        "requests": 122,
+        "callbacks": 122,
+        "cancellations": 0,
+        "pending": 0,
+        "at": 15176.399999976158
+      },
+      "after": {
+        "requests": 122,
+        "callbacks": 122,
+        "cancellations": 0,
+        "pending": 0,
+        "at": 15684
+      },
+      "elapsedMs": 507.60000002384186,
+      "requests": 0,
+      "callbacks": 0,
+      "cancellations": 0,
+      "pendingAtEnd": 0
+    }
+  ],
+  "todos": [],
+  "completedAt": "2026-10-02T16:15:16.437Z",
+  "summary": {
+    "passed": 86,
+    "failed": 0,
+    "todo": 0,
+    "axeViolations": 0,
+    "manualReviewItems": 0
+  },
+  "success": true
+}

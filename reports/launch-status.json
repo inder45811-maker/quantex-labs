@@ -1,0 +1,12 @@
+{
+  "mode": "preview",
+  "technicalAudit": "Run the browser audit before release.",
+  "businessBlockers": [
+    "Provide an official WhatsApp or Telegram invitation.",
+    "Confirm the final catalog, strengths, formats, prices, availability and supporting documentation.",
+    "Confirm business contact information and ordering, delivery, returns and site policy content."
+  ],
+  "indexing": "Preview pages are noindex; sitemap contains no preview URLs.",
+  "access": "Audience is managed separately by Sites; this build does not change it.",
+  "pages": 13
+}

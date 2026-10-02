@@ -1,0 +1,71 @@
+{
+  "checkedPages": 13,
+  "parsedStructuredDataNodes": 50,
+  "buildGateChecks": 7,
+  "previewIndexing": "noindex; empty sitemap",
+  "assets": [
+    {
+      "path": "app.js",
+      "bytes": 3491,
+      "gzipBytes": 1417
+    },
+    {
+      "path": "assets/dna-fallback.svg",
+      "bytes": 210996,
+      "gzipBytes": 30649
+    },
+    {
+      "path": "assets/fonts/space-grotesk-latin.woff2",
+      "bytes": 22288,
+      "gzipBytes": 22316
+    },
+    {
+      "path": "assets/logo.svg",
+      "bytes": 273,
+      "gzipBytes": 211
+    },
+    {
+      "path": "dna-helix.js",
+      "bytes": 19704,
+      "gzipBytes": 6220
+    },
+    {
+      "path": "dna-loader.js",
+      "bytes": 725,
+      "gzipBytes": 439
+    },
+    {
+      "path": "motion.js",
+      "bytes": 3345,
+      "gzipBytes": 1401
+    },
+    {
+      "path": "site-config.js",
+      "bytes": 311,
+      "gzipBytes": 210
+    },
+    {
+      "path": "styles.css",
+      "bytes": 26437,
+      "gzipBytes": 6094
+    },
+    {
+      "path": "vendor/three.core.js",
+      "bytes": 37,
+      "gzipBytes": 57
+    },
+    {
+      "path": "vendor/three.core.min.js",
+      "bytes": 415817,
+      "gzipBytes": 105287
+    },
+    {
+      "path": "vendor/three.module.min.js",
+      "bytes": 392832,
+      "gzipBytes": 90406
+    }
+  ],
+  "totalAssetBytes": 1096256,
+  "totalAssetGzipBytes": 264707,
+  "note": "Gzip figures are estimates; deployed transport and device performance are not measured by this source check."
+}

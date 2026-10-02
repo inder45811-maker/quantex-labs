@@ -1,1 +1,1 @@
-{"project_id":"appgprj_6abf976d20588191aa02f87236966ec1","static":{"directory":"dist"}}
+{"project_id":"appgprj_6abf976d20588191aa02f87236966ec1","static":{"directory":"dist","not_found_handling":"404-page"}}
