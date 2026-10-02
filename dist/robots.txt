@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://quantex-labs.indi678678.chatgpt.site/sitemap.xml
+

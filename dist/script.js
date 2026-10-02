@@ -1,13 +1,12 @@
-// Add the official WhatsApp or Telegram invite URL here when it is available.
-const GROUP_LINK = "";
+const GROUP_LINK = window.QUANTEX_GROUP_LINK || "";
 
 const products = [
-  { name: "BPC-157", strength: "5 mg", category: "recovery", code: "BPC", subtitle: "Research peptide" },
-  { name: "TB-500", strength: "5 mg", category: "recovery", code: "TB", subtitle: "Research peptide" },
-  { name: "GHK-Cu", strength: "50 mg", category: "cellular", code: "GHK", subtitle: "Copper peptide" },
-  { name: "Ipamorelin", strength: "10 mg", category: "recovery", code: "IPA", subtitle: "Research peptide" },
-  { name: "CJC-1295", strength: "10 mg", category: "recovery", code: "CJC", subtitle: "Research peptide" },
-  { name: "MOTS-c", strength: "10 mg", category: "cellular", code: "MTS", subtitle: "Mitochondrial peptide" }
+  { name: "BPC-157", slug: "bpc-157", strength: "5 mg", category: "recovery", code: "BPC", subtitle: "Research peptide" },
+  { name: "TB-500", slug: "tb-500", strength: "5 mg", category: "recovery", code: "TB", subtitle: "Research peptide" },
+  { name: "GHK-Cu", slug: "ghk-cu", strength: "50 mg", category: "cellular", code: "GHK", subtitle: "Copper peptide" },
+  { name: "Ipamorelin", slug: "ipamorelin", strength: "10 mg", category: "recovery", code: "IPA", subtitle: "Research peptide" },
+  { name: "CJC-1295", slug: "cjc-1295", strength: "10 mg", category: "recovery", code: "CJC", subtitle: "Research peptide" },
+  { name: "MOTS-c", slug: "mots-c", strength: "10 mg", category: "cellular", code: "MTS", subtitle: "Mitochondrial peptide" }
 ];
 
 const grid = document.querySelector("#product-grid");
@@ -20,7 +19,7 @@ function card(product, index) {
   return `<article class="product-card" style="--card-index:${index}">
     <div class="product-visual" aria-hidden="true"><span class="visual-orbit orbit-one"></span><span class="visual-orbit orbit-two"></span><span class="compound-code">${product.code}</span><span class="visual-corner">QL / ${String(index + 1).padStart(2, "0")}</span></div>
     <div class="product-meta"><span>${product.subtitle}</span><span>Sample listing</span></div>
-    <div class="product-title"><h3>${name}</h3><span>${product.strength}</span></div>
+    <div class="product-title"><h3><a href="/products/${product.slug}.html">${name}</a></h3><span>${product.strength}</span></div>
     <button class="product-action" type="button" data-enquire="${name}">Enquire to purchase <span aria-hidden="true">↗</span></button>
   </article>`;
 }
@@ -44,7 +43,9 @@ function openGroup(productName) {
     const url = new URL(GROUP_LINK);
     if (["https:", "http:"].includes(url.protocol)) window.open(url.href, "_blank", "noopener,noreferrer");
   } else {
-    document.querySelector("#connect").scrollIntoView({ behavior: "smooth" });
+    const connect = document.querySelector("#connect");
+    if (connect) connect.scrollIntoView({ behavior: "smooth" });
+    else window.location.href = "/contact.html";
   }
 }
 grid.addEventListener("click", event => {
@@ -52,7 +53,7 @@ grid.addEventListener("click", event => {
   if (button) openGroup(button.dataset.enquire);
 });
 const groupButton = document.querySelector("[data-group-link]");
-if (GROUP_LINK) { groupButton.href = GROUP_LINK; groupButton.target = "_blank"; groupButton.rel = "noopener noreferrer"; groupButton.innerHTML = 'Join the official group <span aria-hidden="true">↗</span>'; document.querySelector(".connect-section > p:not(.eyebrow)").textContent = "Join our official community channel to ask about products and ordering."; }
+if (GROUP_LINK && groupButton) { groupButton.href = GROUP_LINK; groupButton.target = "_blank"; groupButton.rel = "noopener noreferrer"; groupButton.innerHTML = 'Join the official group <span aria-hidden="true">↗</span>'; const message = document.querySelector(".connect-section > p:not(.eyebrow)"); if (message) message.textContent = "Join our official community channel to ask about products and ordering."; }
 document.querySelector("#year").textContent = new Date().getFullYear();
 const menu = document.querySelector(".menu-button");
 menu.addEventListener("click", () => { const open = menu.getAttribute("aria-expanded") !== "true"; menu.setAttribute("aria-expanded", String(open)); document.querySelector("#nav").classList.toggle("open", open); });
