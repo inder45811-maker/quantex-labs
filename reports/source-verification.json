@@ -6,8 +6,8 @@
   "assets": [
     {
       "path": "app.js",
-      "bytes": 3491,
-      "gzipBytes": 1417
+      "bytes": 3553,
+      "gzipBytes": 1450
     },
     {
       "path": "assets/dna-fallback.svg",
@@ -26,46 +26,46 @@
     },
     {
       "path": "dna-helix.js",
-      "bytes": 23030,
-      "gzipBytes": 7137
+      "bytes": 23448,
+      "gzipBytes": 7171
     },
     {
       "path": "dna-loader.js",
-      "bytes": 725,
-      "gzipBytes": 439
+      "bytes": 727,
+      "gzipBytes": 443
     },
     {
       "path": "motion.js",
-      "bytes": 10664,
-      "gzipBytes": 3484
+      "bytes": 10745,
+      "gzipBytes": 3494
     },
     {
       "path": "site-config.js",
-      "bytes": 311,
-      "gzipBytes": 210
+      "bytes": 349,
+      "gzipBytes": 235
     },
     {
       "path": "styles.css",
-      "bytes": 29938,
-      "gzipBytes": 6831
+      "bytes": 29991,
+      "gzipBytes": 6841
     },
     {
       "path": "vendor/three.core.js",
-      "bytes": 37,
-      "gzipBytes": 57
+      "bytes": 38,
+      "gzipBytes": 58
     },
     {
       "path": "vendor/three.core.min.js",
-      "bytes": 415817,
-      "gzipBytes": 105287
+      "bytes": 415830,
+      "gzipBytes": 105294
     },
     {
       "path": "vendor/three.module.min.js",
-      "bytes": 392832,
-      "gzipBytes": 90406
+      "bytes": 392845,
+      "gzipBytes": 90415
     }
   ],
-  "totalAssetBytes": 1110402,
-  "totalAssetGzipBytes": 268444,
+  "totalAssetBytes": 1111083,
+  "totalAssetGzipBytes": 268577,
   "note": "Gzip figures are estimates; deployed transport and device performance are not measured by this source check."
 }

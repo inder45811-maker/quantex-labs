@@ -1,0 +1,6 @@
+pages-dist/
+node_modules/
+.sites-runtime/
+.env
+.env.*
+!.env.example

@@ -1,0 +1,87 @@
+{
+  "startedAt": "2026-10-02T17:59:03.143Z",
+  "checks": [
+    {
+      "name": "Direct directory route: /",
+      "status": "passed"
+    },
+    {
+      "name": "Direct directory route: /products/",
+      "status": "passed"
+    },
+    {
+      "name": "Direct directory route: /quality/",
+      "status": "passed"
+    },
+    {
+      "name": "Direct directory route: /about/",
+      "status": "passed"
+    },
+    {
+      "name": "Direct directory route: /contact/",
+      "status": "passed"
+    },
+    {
+      "name": "Direct directory route: /faq/",
+      "status": "passed"
+    },
+    {
+      "name": "Direct directory route: /products/bpc-157/",
+      "status": "passed"
+    },
+    {
+      "name": "Direct directory route: /products/tb-500/",
+      "status": "passed"
+    },
+    {
+      "name": "Direct directory route: /products/ghk-cu/",
+      "status": "passed"
+    },
+    {
+      "name": "Direct directory route: /products/ipamorelin/",
+      "status": "passed"
+    },
+    {
+      "name": "Direct directory route: /products/cjc-1295/",
+      "status": "passed"
+    },
+    {
+      "name": "Direct directory route: /products/mots-c/",
+      "status": "passed"
+    },
+    {
+      "name": "Catalog search, category filter and detail navigation",
+      "status": "passed"
+    },
+    {
+      "name": "Contact query context and runtime backlink",
+      "status": "passed"
+    },
+    {
+      "name": "DNA module, font, pause and manual controls",
+      "status": "passed"
+    },
+    {
+      "name": "Mobile menu and base-path navigation",
+      "status": "passed"
+    },
+    {
+      "name": "True nested 404 with working catalog recovery",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced-motion DNA remains interactive",
+      "status": "passed"
+    },
+    {
+      "name": "No broken resources or browser errors",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "completedAt": "2026-10-02T17:59:39.484Z",
+  "passed": 19,
+  "failed": 0,
+  "success": true
+}

@@ -1,6 +1,18 @@
 # Quantex Labs
 
-A static, multi-page research-material catalog with a local Three.js DNA illustration and progressive enhancement. The site is published through Sites under the existing project ID in `.openai/hosting.json`.
+A static, multi-page research-material catalog with a local Three.js DNA illustration and progressive enhancement. The complete source and its previous history are preserved here.
+
+## GitHub Pages
+
+Website: https://inder45811-maker.github.io/quantex-labs/
+
+Every push to `main` builds, verifies and deploys the site with `.github/workflows/deploy-pages.yml`. The workflow deploys only the generated `pages-dist/` artifact, with directory routes and the correct base path. It uses GitHub's deployment token and does not require a personal token in repository secrets.
+
+```sh
+node scripts/build-github-pages.mjs
+```
+
+The output is ignored because it is reproducible from the committed source. The workflow reads the deployment origin and base path from GitHub Pages settings, supporting a future custom domain. The retained `.openai/hosting.json` identifies the earlier Sites deployment; its access controls do not protect this public GitHub Pages deployment.
 
 ## Build and check
 
@@ -16,21 +28,21 @@ node scripts/verify-source.mjs
 
 ## Current release status
 
-This is a private catalog preview. Ordering is not open. All sample pages explicitly use `noindex,follow`, and the sitemap excludes preview URLs. Native Sites access controls are managed separately from these files.
+GitHub Pages publishes a publicly reachable catalog preview. Ordering is not open. All sample pages explicitly use `noindex,follow`, and the sitemap excludes preview URLs. Noindex is an indexing instruction, not an access control.
 
 Before a sales launch:
 
 1. Add the official HTTPS WhatsApp or Telegram group invitation in `content/site.json`.
 2. Replace sample catalog records with confirmed names, strengths, formats, prices, currency, availability and supporting documentation. Set `confirmed` only for verified listings.
 3. Supply and publish the actual business contact information and ordering, delivery, returns, privacy and other applicable site policy content. The confirmation flag is a launch gate, not a substitute for publishing those pages.
-4. Review the content and audience for the intended public launch. The rebuild preserves the existing private audience.
-5. Update preview-specific page copy and metadata to reflect the final approved catalog. Then set `mode` to `live`, rebuild, rerun source/browser checks and publish through the Sites workflow.
+4. Review the content for the intended sales launch. GitHub Pages is already publicly reachable.
+5. Update preview-specific page copy and metadata to reflect the final approved catalog. Then set `mode` to `live`, rebuild, rerun source/browser checks and push to `main`.
 
 The builder blocks live mode when required invitations, catalog fields or business confirmation are missing. It validates invitation hosts and rejects unsafe URL schemes. This does not verify that an invite is active or that a product is lawfully available; confirm the real supplied information before launch.
 
 ## Browser verification
 
-The release audit checks 12 normal routes plus a real 404 response, four screen widths, contrast and automated WCAG AA rules, keyboard menu controls, search/filter states, compound enquiry context, reduced motion, no-JavaScript navigation and catalog rendering, failed-module recovery, and WebGL context loss. See `reports/production-audit.md` and the JSON evidence. Automated accessibility testing is supplemented by interaction and visual checks; it is not a certification.
+The original Sites release audit checks 12 normal routes plus a real 404 response, four screen widths, contrast and automated WCAG AA rules, keyboard menu controls, search/filter states, compound enquiry context, reduced motion, no-JavaScript navigation and catalog rendering, failed-module recovery, and WebGL context loss. See `reports/production-audit.md` and the JSON evidence for that historical release. Pages-specific URL, route, asset and metadata checks are recorded in `reports/pages-verification.json`. Automated accessibility testing is supplemented by interaction and visual checks; it is not a certification.
 
 ## Search and answer-engine preparation
 

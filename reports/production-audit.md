@@ -1,5 +1,7 @@
 # Quantex Labs production review
 
+Historical review of the original Sites release before the GitHub Pages migration. The GitHub Pages website is publicly reachable. Its deployment-specific verification is recorded in `pages-verification.json` and `pages-browser.json`; current hosting instructions are in the README.
+
 Reviewed: 2 October 2026. Scope: the existing Quantex Labs Site, its 12 normal pages and 404 page, catalog/enquiry flows, accessible presentation, motion and DNA renderer. The midnight navy, teal and ice palette, typography, monogram, navigation, specimen cards and page layout establish a distinct Quantex identity.
 
 ## Release status
