@@ -26,8 +26,8 @@
     },
     {
       "path": "dna-helix.js",
-      "bytes": 19704,
-      "gzipBytes": 6220
+      "bytes": 23030,
+      "gzipBytes": 7137
     },
     {
       "path": "dna-loader.js",
@@ -36,8 +36,8 @@
     },
     {
       "path": "motion.js",
-      "bytes": 3345,
-      "gzipBytes": 1401
+      "bytes": 10664,
+      "gzipBytes": 3484
     },
     {
       "path": "site-config.js",
@@ -46,8 +46,8 @@
     },
     {
       "path": "styles.css",
-      "bytes": 26437,
-      "gzipBytes": 6094
+      "bytes": 29938,
+      "gzipBytes": 6831
     },
     {
       "path": "vendor/three.core.js",
@@ -65,7 +65,7 @@
       "gzipBytes": 90406
     }
   ],
-  "totalAssetBytes": 1096256,
-  "totalAssetGzipBytes": 264707,
+  "totalAssetBytes": 1110402,
+  "totalAssetGzipBytes": 268444,
   "note": "Gzip figures are estimates; deployed transport and device performance are not measured by this source check."
 }

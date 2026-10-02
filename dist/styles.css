@@ -25,3 +25,29 @@
 @media(min-width:901px){.nav>a:not(.header-contact):after{left:0;right:0}}
 @media(hover:hover) and (pointer:fine){.product-card:hover{transform:perspective(900px) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg)) translateY(-5px)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.button:hover,.product-card:hover,.card-enquiry:hover,.related-links a:hover,.brand:hover .brand-mark,.product-card:hover .compound-code{transform:none}::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}
+/* Distinct entrance, scroll, interaction and navigation choreography. */
+.motion-word{display:inline-block;overflow:clip;vertical-align:bottom;padding-block:.06em .08em;margin-block:-.06em -.08em;perspective:700px}
+.word-inner{display:inline-block;transform-origin:50% 100%;color:inherit}
+.hero h1 .motion-word,.hero h1 .word-inner,.page-hero h1 .motion-word,.page-hero h1 .word-inner{display:inline-block;color:inherit}
+.section-heading h2 .motion-word,.section-heading h2 .word-inner,.callout-inner h2 .motion-word,.callout-inner h2 .word-inner{color:inherit}
+.hero{position:relative;background-image:radial-gradient(ellipse at var(--scene-glow-x,65%) var(--scene-glow-y,35%),#17516555 0,transparent 62%)}
+.hero-copy{transform:translate3d(0,calc(var(--scene-progress,0)*-30px),0)}
+.page-hero .shell{transform:translate3d(0,calc(var(--scene-progress,0)*-20px),0)}
+.reading-progress{position:fixed;top:0;left:0;right:0;height:3px;background:var(--teal);z-index:30;pointer-events:none;transform:scaleX(0);transform-origin:left}
+.filter-tabs{position:relative}.filter-active-indicator{position:absolute;top:0;left:0;pointer-events:none;z-index:2;border:2px solid #5be5ce;border-radius:7px;transition:transform .55s cubic-bezier(.16,1,.3,1),width .55s cubic-bezier(.16,1,.3,1),height .55s cubic-bezier(.16,1,.3,1)}
+.compound-face{background-image:radial-gradient(260px circle at var(--glow-x,50%) var(--glow-y,0%),#ffffffa6,transparent 75%);transition:background-position .2s}
+.product-card{transform-origin:50% 60%;transition:transform .55s cubic-bezier(.16,1,.3,1),border-color .35s,box-shadow .55s}
+.compound-code{transition:transform .65s cubic-bezier(.16,1,.3,1)}
+.button{transition:background .25s,border-color .25s,color .25s,transform .45s cubic-bezier(.16,1,.3,1),box-shadow .4s}
+.button:hover{transform:translate3d(var(--mag-x,0px),calc(var(--mag-y,0px) - 4px),0);box-shadow:0 12px 30px #071b2c26}.button:active{transform:scale(.97)}
+.product-card:focus-within{border-color:var(--link)}
+@media(hover:hover) and (pointer:fine){.product-card:hover{transform:perspective(1000px) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg)) translateY(-10px) scale(1.015);box-shadow:0 25px 50px #071b2c24;border-color:#71b6ac}.product-card:hover .compound-code{transform:translateY(-8px)}}
+@view-transition{navigation:auto}
+::view-transition-group(*){animation-duration:.6s;animation-timing-function:cubic-bezier(.16,1,.3,1)}
+::view-transition-old(root){animation:quantex-exit .22s ease-out both}
+::view-transition-new(root){animation:quantex-arrive .55s cubic-bezier(.16,1,.3,1) both}
+::view-transition-old(site-header),::view-transition-new(site-header){animation:none;mix-blend-mode:normal}
+@keyframes quantex-exit{to{opacity:0;transform:scale(.98) translateY(-12px)}}
+@keyframes quantex-arrive{from{clip-path:inset(10% 0 0 0);opacity:0;transform:translateY(30px)}to{clip-path:inset(0);opacity:1;transform:none}}
+@media(max-width:700px){.hero-copy,.page-hero .shell{transform:none}.reading-progress{height:2px}::view-transition-group(*){animation-duration:.42s}::view-transition-new(root){animation-duration:.42s}}
+@media(prefers-reduced-motion:reduce){.hero-copy,.page-hero .shell,.button:hover,.product-card:hover,.product-card:hover .compound-code{transform:none!important}.reading-progress{display:none}.filter-active-indicator{transition:none}.motion-word{overflow:visible;perspective:none}::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}

@@ -1,5 +1,5 @@
 {
-  "startedAt": "2026-10-02T16:14:13.277Z",
+  "startedAt": "2026-10-02T16:41:42.618Z",
   "baseUrl": "http://127.0.0.1:4175",
   "checks": [
     {
@@ -16,7 +16,7 @@
       "status": "passed",
       "details": {
         "passes": 26,
-        "manualReviewItems": 0
+        "manualReviewItems": 1
       }
     },
     {
@@ -49,7 +49,7 @@
       "status": "passed",
       "details": {
         "passes": 28,
-        "manualReviewItems": 0
+        "manualReviewItems": 1
       }
     },
     {
@@ -454,20 +454,20 @@
       "details": {
         "state": "paused and settled",
         "before": {
-          "requests": 122,
-          "callbacks": 122,
+          "requests": 116,
+          "callbacks": 116,
           "cancellations": 0,
           "pending": 0,
-          "at": 15176.399999976158
+          "at": 15548.800000011921
         },
         "after": {
-          "requests": 122,
-          "callbacks": 122,
+          "requests": 116,
+          "callbacks": 116,
           "cancellations": 0,
           "pending": 0,
-          "at": 15684
+          "at": 16057.100000023842
         },
-        "elapsedMs": 507.60000002384186,
+        "elapsedMs": 508.30000001192093,
         "requests": 0,
         "callbacks": 0,
         "cancellations": 0,
@@ -661,13 +661,257 @@
     {
       "route": "/",
       "violations": [],
-      "incomplete": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "target": [
+                ".hero-copy > .eyebrow"
+              ],
+              "html": "<p class=\"eyebrow\">QUANTEX LABS / RESEARCH MATERIALS</p>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "html": "<h1>A clearer path to <span>peptide research.</span></h1>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "h1 > span"
+              ],
+              "html": "<span>peptide research.</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".hero-lead"
+              ],
+              "html": "<p class=\"hero-lead\">Explore research compounds, review the details and connect directly with the Quantex Labs team.</p>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".ghost"
+              ],
+              "html": "<a class=\"button ghost\" href=\"/contact\">How ordering works</a>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".research-notice"
+              ],
+              "html": "<p class=\"research-notice\">Laboratory research only. Not for human consumption.</p>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "button[data-filter=\"all\"]"
+              ],
+              "html": "<button class=\"filter\" data-filter=\"all\" aria-pressed=\"true\">All compounds</button>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "article[data-product=\"bpc-157\"] > .compound-face[aria-hidden=\"true\"] > .compound-index"
+              ],
+              "html": "<span class=\"compound-index\">QL / 01</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"bpc-157\"] > .compound-face[aria-hidden=\"true\"] > .compound-code"
+              ],
+              "html": "<span class=\"compound-code\">BPC</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"bpc-157\"] > .compound-face[aria-hidden=\"true\"] > .compound-label"
+              ],
+              "html": "<span class=\"compound-label\">RESEARCH COMPOUND</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"tb-500\"] > .compound-face[aria-hidden=\"true\"] > .compound-index"
+              ],
+              "html": "<span class=\"compound-index\">QL / 02</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"tb-500\"] > .compound-face[aria-hidden=\"true\"] > .compound-code"
+              ],
+              "html": "<span class=\"compound-code\">TB</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"tb-500\"] > .compound-face[aria-hidden=\"true\"] > .compound-label"
+              ],
+              "html": "<span class=\"compound-label\">RESEARCH COMPOUND</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"ipamorelin\"] > .compound-face[aria-hidden=\"true\"] > .compound-index"
+              ],
+              "html": "<span class=\"compound-index\">QL / 04</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"ipamorelin\"] > .compound-face[aria-hidden=\"true\"] > .compound-code"
+              ],
+              "html": "<span class=\"compound-code\">IPA</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"ipamorelin\"] > .compound-face[aria-hidden=\"true\"] > .compound-label"
+              ],
+              "html": "<span class=\"compound-label\">RESEARCH COMPOUND</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"cjc-1295\"] > .compound-face[aria-hidden=\"true\"] > .compound-index"
+              ],
+              "html": "<span class=\"compound-index\">QL / 05</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"cjc-1295\"] > .compound-face[aria-hidden=\"true\"] > .compound-code"
+              ],
+              "html": "<span class=\"compound-code\">CJC</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"cjc-1295\"] > .compound-face[aria-hidden=\"true\"] > .compound-label"
+              ],
+              "html": "<span class=\"compound-label\">RESEARCH COMPOUND</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ],
       "passes": 26
     },
     {
       "route": "/products",
       "violations": [],
-      "incomplete": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "target": [
+                "button[data-filter=\"all\"]"
+              ],
+              "html": "<button class=\"filter\" data-filter=\"all\" aria-pressed=\"true\">All compounds</button>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "article[data-product=\"bpc-157\"] > .compound-face[aria-hidden=\"true\"] > .compound-index"
+              ],
+              "html": "<span class=\"compound-index\">QL / 01</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"bpc-157\"] > .compound-face[aria-hidden=\"true\"] > .compound-code"
+              ],
+              "html": "<span class=\"compound-code\">BPC</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"bpc-157\"] > .compound-face[aria-hidden=\"true\"] > .compound-label"
+              ],
+              "html": "<span class=\"compound-label\">RESEARCH COMPOUND</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"tb-500\"] > .compound-face[aria-hidden=\"true\"] > .compound-index"
+              ],
+              "html": "<span class=\"compound-index\">QL / 02</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"tb-500\"] > .compound-face[aria-hidden=\"true\"] > .compound-code"
+              ],
+              "html": "<span class=\"compound-code\">TB</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"tb-500\"] > .compound-face[aria-hidden=\"true\"] > .compound-label"
+              ],
+              "html": "<span class=\"compound-label\">RESEARCH COMPOUND</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"ipamorelin\"] > .compound-face[aria-hidden=\"true\"] > .compound-index"
+              ],
+              "html": "<span class=\"compound-index\">QL / 04</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"ipamorelin\"] > .compound-face[aria-hidden=\"true\"] > .compound-code"
+              ],
+              "html": "<span class=\"compound-code\">IPA</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"ipamorelin\"] > .compound-face[aria-hidden=\"true\"] > .compound-label"
+              ],
+              "html": "<span class=\"compound-label\">RESEARCH COMPOUND</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"cjc-1295\"] > .compound-face[aria-hidden=\"true\"] > .compound-index"
+              ],
+              "html": "<span class=\"compound-index\">QL / 05</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"cjc-1295\"] > .compound-face[aria-hidden=\"true\"] > .compound-code"
+              ],
+              "html": "<span class=\"compound-code\">CJC</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "article[data-product=\"cjc-1295\"] > .compound-face[aria-hidden=\"true\"] > .compound-label"
+              ],
+              "html": "<span class=\"compound-label\">RESEARCH COMPOUND</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ],
       "passes": 28
     },
     {
@@ -738,7 +982,7 @@
       "type": "console",
       "message": "Failed to load resource: net::ERR_FAILED",
       "location": {
-        "url": "http://127.0.0.1:4175/dna-helix.js?v=c812fdef43e4",
+        "url": "http://127.0.0.1:4175/dna-helix.js?v=23141bcf899d",
         "line": 0,
         "column": 0,
         "lineNumber": 0,
@@ -760,20 +1004,20 @@
     {
       "state": "paused and settled",
       "before": {
-        "requests": 122,
-        "callbacks": 122,
+        "requests": 116,
+        "callbacks": 116,
         "cancellations": 0,
         "pending": 0,
-        "at": 15176.399999976158
+        "at": 15548.800000011921
       },
       "after": {
-        "requests": 122,
-        "callbacks": 122,
+        "requests": 116,
+        "callbacks": 116,
         "cancellations": 0,
         "pending": 0,
-        "at": 15684
+        "at": 16057.100000023842
       },
-      "elapsedMs": 507.60000002384186,
+      "elapsedMs": 508.30000001192093,
       "requests": 0,
       "callbacks": 0,
       "cancellations": 0,
@@ -781,13 +1025,13 @@
     }
   ],
   "todos": [],
-  "completedAt": "2026-10-02T16:15:16.437Z",
+  "completedAt": "2026-10-02T16:42:34.210Z",
   "summary": {
     "passed": 86,
     "failed": 0,
     "todo": 0,
     "axeViolations": 0,
-    "manualReviewItems": 0
+    "manualReviewItems": 2
   },
   "success": true
 }

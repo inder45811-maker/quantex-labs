@@ -38,7 +38,7 @@ Every route has a distinct title, description, canonical, one main heading, visi
 
 ## Motion and rendering
 
-Pages use progressive scroll reveals, staggered entrances, card interaction and FAQ transitions. Native page transitions are used where supported. Content and navigation remain usable when JavaScript is disabled. Reduced-motion preferences suppress decorative motion and stop automatic DNA rotation. The DNA renderer stops its animation loop when paused and settled, hidden or offscreen. A matching static diagram remains visible until the renderer is ready; WebGL failure uses an interactive 2D renderer where available.
+Pages use word-mask heading reveals, staggered entrances with depth, pointer-reactive specimen highlights, card tilt, magnetic buttons, a sliding filter outline and animated FAQ answers. Native page transitions and shared compound-to-detail morphs are used where supported. The complete DNA model has a cinematic arrival and reacts to scrolling and pointer movement without changing its accepted geometry. Content and navigation remain usable when JavaScript is disabled. Reduced-motion preferences suppress decorative motion and stop automatic DNA rotation. The DNA renderer stops its animation loop when paused and settled, hidden or offscreen. A matching static diagram remains visible until the renderer is ready; WebGL failure uses an interactive 2D renderer where available.
 
 ## Licenses
 

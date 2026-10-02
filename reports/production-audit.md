@@ -29,13 +29,14 @@ Reviewed: 2 October 2026. Scope: the existing Quantex Labs Site, its 12 normal p
 
 ## Verification evidence
 
-- The final core audit passed **86 checks**, with **0 automated WCAG AA violations**, **0 incomplete items**, **0 failures** and **0 TODOs**. Exact results are in `browser-audit.json`.
+- The final core audit passed **86 checks**, with **0 automated WCAG AA violations**, **2 gradient/outline groups requiring manual review**, **0 failures** and **0 TODOs**. Exact results are in `browser-audit.json`. Both manual-review groups were checked against their bounded background colors: all nine text/background combinations exceed 4.5:1 (minimum 5.15:1). See `manual-motion-contrast.json`.
 - Checks cover all 12 routes, four screen widths (320, 390, 768 and 1440 pixels), automated WCAG AA rules, metadata, internal links, real 404 response, menu keyboard/focus behavior, catalog filtering/search/empty states, enquiry context, DNA drag/pause/reset, reduced motion, no-JavaScript catalog/navigation, blocked module and WebGL context loss.
 - Paused rendering was instrumented to measure actual frame requests and callbacks during a settled idle interval.
 - `source-verification.json` records 13 generated pages, 50 parsed structured-data nodes, seven real build-gate checks and asset sizes. Unsafe invitations are rejected in isolated build fixtures; the live build is rejected while launch data is missing.
 - The motion audit passed **37 checks**, with **0 failures** and **0 TODOs**, including entrances and reveals, FAQ opening/closing/rapid toggles/keyboard use, native FAQ behavior without JavaScript, filters, DNA keyboard rotation and reduced-motion behavior. See `motion-audit.json`.
-- Fresh-context local measurements recorded home LCP **2.032 seconds**, catalog LCP **1.644 seconds**, and initial-load CLS **0** on both routes. These are unthrottled headless Chrome observations with software WebGL. They are not mobile field scores or a production Core Web Vitals assessment.
-- No unexpected runtime errors, failed resources or external HTTP requests were observed. Total static asset gzip size is approximately **259 KiB**; 3D code is loaded on the home page only.
+- The new interactive-motion audit passed **20 checks** with **0 failures**, bringing browser checks to **143**. It verifies word-mask text preservation, four-width layouts, pointer card tilt/highlights, magnetic buttons, filter-indicator movement, unique shared compound transitions, real DNA scroll/pointer events, paused/offscreen scheduling and reduced-motion manual controls. See `interactive-motion.json`.
+- Fresh-context local measurements recorded home LCP **0.752 seconds**, catalog LCP **1.120 seconds**, and initial-load CLS **0** on both routes. These are unthrottled headless Chrome observations with software WebGL. They are not mobile field scores or a production Core Web Vitals assessment.
+- No unexpected runtime errors, failed resources or external HTTP requests were observed. Total static asset gzip size is approximately **262 KiB**; 3D code is loaded on the home page only.
 - Desktop and mobile screenshots were visually inspected. The accepted double-helix geometry is preserved: two continuous spiralling rails and 24 paired rungs.
 - The production error log checked during the review contained no error events. This is an observed log result, not a guarantee of future uptime.
 
@@ -43,7 +44,9 @@ Automated accessibility checks do not certify accessibility. Local Chrome tests 
 
 ## Motion across the site
 
-Hero/page entrances, progressive section reveals, staggered catalog cards, subtle desktop card tilt, button and link feedback, FAQ transitions and supported native page transitions share a restrained timing system. Reduced motion suppresses decorative animation and stops automatic DNA rotation. Content stays visible and navigable when enhancement is unavailable.
+Headings reveal through word masks; supporting text and cards enter in staggered sequences with stronger depth. Desktop cards tilt toward the pointer and catch a moving highlight, while action buttons subtly follow the pointer. A sliding outline tracks the active catalog filter. FAQ answers animate height and content; mobile navigation links enter in sequence. Supported native page transitions combine fades, depth and a directional reveal, with a selected compound specimen morphing into its detail panel.
+
+The accepted DNA geometry arrives as a complete object with a cinematic rotation and scale transition. Scrolling changes its angle and scale; pointer movement affects its tilt and lighting. Pausing freezes passive effects, while manual drag and keyboard controls remain available. Animation scheduling stops when the scene is settled, hidden or offscreen. Reduced motion suppresses decorative entrances, pointer effects, page transitions and automatic rotation. Content stays visible and navigable when enhancement is unavailable.
 
 ## Search, AEO and GEO preparation
 

@@ -20,6 +20,55 @@ let yaw = INITIAL_YAW, targetYaw = yaw, pitch = INITIAL_PITCH, targetPitch = pit
 let speed = 0, lastX = 0, lastY = 0, lastPointerTime = 0, lastTime = 0, frame = 0, idleTimer = 0;
 let idleUntil = performance.now() + 1800, needsRender = true, fallbackDistance = 17.4;
 const geometryParts = [];
+// Arrival and scroll/hover effects transform the complete paired object.
+// Manual yaw/pitch remain independent and keep their accepted limits.
+const ARRIVAL_DURATION = 1.5;
+let arrivalElapsed = reducedMotion.matches ? ARRIVAL_DURATION : 0;
+const sceneTargets = { progress: 0, pointerX: 0, pointerY: 0 };
+const sceneValues = { progress: 0, pointerX: 0, pointerY: 0 };
+const sceneKeys = ['progress', 'pointerX', 'pointerY'];
+function clearSceneEffects() {
+  for (const key of sceneKeys) sceneTargets[key] = sceneValues[key] = 0;
+  arrivalElapsed = ARRIVAL_DURATION;
+}
+function freezeSceneEffects() {
+  // Discard pending passive movement at the current displayed pose when paused.
+  for (const key of sceneKeys) sceneTargets[key] = sceneValues[key];
+}
+function sceneNeedsMotion() {
+  return autoRotate && !reducedMotion.matches && (arrivalElapsed < ARRIVAL_DURATION ||
+    sceneKeys.some(key => Math.abs(sceneTargets[key] - sceneValues[key]) > SETTLED));
+}
+function updateSceneEffects(dt, elapsed) {
+  if (!autoRotate || reducedMotion.matches) return false;
+  let changed = false;
+  if (arrivalElapsed < ARRIVAL_DURATION) {
+    arrivalElapsed = Math.min(ARRIVAL_DURATION, arrivalElapsed + elapsed); changed = true;
+  }
+  const ease = 1 - Math.exp(-dt * 10);
+  for (const key of sceneKeys) {
+    const previous = sceneValues[key];
+    sceneValues[key] += (sceneTargets[key] - previous) * ease;
+    if (Math.abs(sceneTargets[key] - sceneValues[key]) <= SETTLED) sceneValues[key] = sceneTargets[key];
+    if (previous !== sceneValues[key]) changed = true;
+  }
+  return changed;
+}
+function scenePose() {
+  const t = Math.min(1, arrivalElapsed / ARRIVAL_DURATION), arrival = 1 - Math.pow(1 - t, 3);
+  const progress = reducedMotion.matches ? 0 : sceneValues.progress;
+  const pointerX = reducedMotion.matches ? 0 : sceneValues.pointerX;
+  const pointerY = reducedMotion.matches ? 0 : sceneValues.pointerY;
+  return {
+    yaw: yaw + progress * .6 - .65 * (1 - arrival),
+    pitch: pitch + pointerY * .04,
+    hoverYaw: .04 + pointerX * .04,
+    lean: LEAN + progress * .12,
+    y: .35 - pointerY * .08,
+    scale: (.9 + .1 * arrival) * (1 + progress * .1),
+    lightX: -5 + pointerX * 1.2
+  };
+}
 
 function point(y, phase = 0) {
   const angle = y / PITCH * Math.PI * 2 + phase;
@@ -154,13 +203,14 @@ function buildFallback() {
 }
 function drawFallback() {
   const ctx = fallback, width = ctx.canvas.width, height = ctx.canvas.height, focal = height / (2 * Math.tan(Math.PI / 12));
-  fallbackEuler.set(pitch, .04, LEAN); fallbackPose.makeRotationFromEuler(fallbackEuler); fallbackLocal.makeRotationY(yaw);
+  const effects = scenePose();
+  fallbackEuler.set(effects.pitch, effects.hoverYaw, effects.lean); fallbackPose.makeRotationFromEuler(fallbackEuler); fallbackLocal.makeRotationY(effects.yaw);
   fallbackMatrix.multiplyMatrices(fallbackPose, fallbackLocal);
   const project = (point, screen) => {
-    fallbackPoint.copy(point).applyMatrix4(fallbackMatrix); fallbackPoint.y += .35;
+    fallbackPoint.copy(point).multiplyScalar(effects.scale).applyMatrix4(fallbackMatrix); fallbackPoint.y += effects.y;
     const scale = focal / (fallbackDistance - fallbackPoint.z);
     screen.x = width / 2 + fallbackPoint.x * scale; screen.y = height / 2 - fallbackPoint.y * scale;
-    screen.z = fallbackPoint.z; screen.scale = scale;
+    screen.z = fallbackPoint.z; screen.scale = scale * effects.scale;
   };
   ctx.clearRect(0, 0, width, height); ctx.lineCap = 'round';
   for (const line of fallbackLines) { project(line.a, line.pa); project(line.b, line.pb); }
@@ -218,7 +268,12 @@ function resize() {
 }
 function render() {
   try {
-    if (renderer) { helix.rotation.y = yaw; pose.rotation.x = pitch; renderer.render(scene, camera); }
+    if (renderer) {
+      const effects = scenePose();
+      helix.rotation.y = effects.yaw; pose.rotation.set(effects.pitch, effects.hoverYaw, effects.lean);
+      pose.position.y = effects.y; pose.scale.setScalar(effects.scale); keyLight.position.x = effects.lightX;
+      renderer.render(scene, camera);
+    }
     else if (fallback) drawFallback();
     else return false;
     needsRender = false; if (!ready) setReady(true);
@@ -249,7 +304,7 @@ function wake() {
 }
 function plan(time) {
   if (!canRun()) { stop(); return; }
-  const moving = Math.abs(targetYaw - yaw) > SETTLED || Math.abs(targetPitch - pitch) > SETTLED || (!dragging && Math.abs(speed) >= STILL);
+  const moving = Math.abs(targetYaw - yaw) > SETTLED || Math.abs(targetPitch - pitch) > SETTLED || (!dragging && Math.abs(speed) >= STILL) || sceneNeedsMotion();
   if (needsRender || moving || (autoRotate && !dragging && time >= idleUntil)) { requestFrame(); return; }
   if (autoRotate && !dragging && !idleTimer) {
     idleTimer = setTimeout(() => { idleTimer = 0; wake(); }, Math.max(1, Math.ceil(idleUntil - performance.now())));
@@ -259,7 +314,9 @@ function plan(time) {
 function animate(time) {
   frame = 0;
   if (!canRun()) { stop(); return; }
-  const dt = lastTime ? Math.min(Math.max((time - lastTime) / 1000, 0), .04) : 1 / 60; lastTime = time;
+  const elapsed = lastTime ? Math.max((time - lastTime) / 1000, 0) : 1 / 60;
+  const dt = Math.min(elapsed, .04); lastTime = time;
+  const sceneChanged = updateSceneEffects(dt, elapsed);
   if (!dragging) {
     if (autoRotate && time >= idleUntil) targetYaw += dt * .12;
     targetYaw += speed * dt; speed *= Math.exp(-dt * 6); if (Math.abs(speed) < STILL) speed = 0;
@@ -268,7 +325,7 @@ function animate(time) {
   yaw += (targetYaw - yaw) * ease; pitch += (targetPitch - pitch) * ease;
   if (Math.abs(targetYaw - yaw) <= SETTLED) yaw = targetYaw;
   if (Math.abs(targetPitch - pitch) <= SETTLED) pitch = targetPitch;
-  if ((needsRender || oldYaw !== yaw || oldPitch !== pitch) && !render()) { stop(); return; }
+  if ((needsRender || sceneChanged || oldYaw !== yaw || oldPitch !== pitch) && !render()) { stop(); return; }
   plan(time);
 }
 function motionLabel() {
@@ -282,6 +339,17 @@ function release(event) {
   if (event?.type === 'pointercancel' || performance.now() - lastPointerTime > 80) speed = 0;
   idleUntil = performance.now() + 2000; wake();
 }
+stage.addEventListener('quantex:scene', event => {
+  // Pause also freezes passive scroll/pointer effects. Direct drag/keys still work.
+  if (disposed || !autoRotate || reducedMotion.matches) return;
+  const detail = event.detail || {}; let changed = false;
+  for (const key of sceneKeys) {
+    if (typeof detail[key] !== 'number' || !Number.isFinite(detail[key])) continue;
+    const next = THREE.MathUtils.clamp(detail[key], key === 'progress' ? 0 : -1, 1);
+    if (next !== sceneTargets[key]) { sceneTargets[key] = next; changed = true; }
+  }
+  if (changed) { needsRender = true; wake(); }
+});
 stage.addEventListener('pointerdown', event => {
   if (!ready || !event.isPrimary || event.button !== 0 || event.target.closest('button')) return;
   dragging = true; speed = 0; lastX = event.clientX; lastY = event.clientY; lastPointerTime = event.timeStamp;
@@ -304,14 +372,14 @@ stage.addEventListener('keydown', event => {
 });
 motion.addEventListener('click', () => {
   autoRotate = !autoRotate; userPaused = !autoRotate; speed = 0;
-  if (!autoRotate) targetYaw = yaw;
+  if (!autoRotate) { targetYaw = yaw; freezeSceneEffects(); }
   motionLabel(); wake();
 });
 document.querySelector('#helix-reset')?.addEventListener('click', () => {
-  targetYaw = INITIAL_YAW; targetPitch = INITIAL_PITCH; speed = 0; idleUntil = performance.now() + 2000; needsRender = true; wake();
+  targetYaw = INITIAL_YAW; targetPitch = INITIAL_PITCH; speed = 0; clearSceneEffects(); idleUntil = performance.now() + 2000; needsRender = true; wake();
 });
 reducedMotion.addEventListener('change', event => {
-  autoRotate = !event.matches && !userPaused; speed = 0; targetYaw = yaw; motionLabel(); wake();
+  autoRotate = !event.matches && !userPaused; speed = 0; targetYaw = yaw; clearSceneEffects(); needsRender = true; motionLabel(); wake();
 });
 compactMedia.addEventListener('change', resize);
 function nearViewport() {

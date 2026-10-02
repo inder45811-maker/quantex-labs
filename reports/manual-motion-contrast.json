@@ -1,0 +1,54 @@
+{
+  "reviewedAt": "2026-10-02",
+  "method": "WCAG relative luminance; brightest bounded hero gradient over #071b2c, darkest specimen background before white highlight, and filter text background with perimeter-only outline.",
+  "axeManualReviewGroups": 2,
+  "requiredMinimum": 4.5,
+  "allCheckedCombinationsPass": true,
+  "combinations": [
+    {
+      "foreground": "#ffffff",
+      "background": "brightest hero gradient",
+      "ratio": 14.35163336499504
+    },
+    {
+      "foreground": "#5be5ce",
+      "background": "brightest hero gradient",
+      "ratio": 9.255983520358624
+    },
+    {
+      "foreground": "#b9e6f2",
+      "background": "brightest hero gradient",
+      "ratio": 10.704776896506484
+    },
+    {
+      "foreground": "#c2d3de",
+      "background": "brightest hero gradient",
+      "ratio": 9.33974115422874
+    },
+    {
+      "foreground": "#a6becb",
+      "background": "brightest hero gradient",
+      "ratio": 7.4144227485257
+    },
+    {
+      "foreground": "#486473",
+      "background": "#e6eef1 specimen face (white highlight only brightens it)",
+      "ratio": 5.339130871993162
+    },
+    {
+      "foreground": "#123c50",
+      "background": "#e6eef1 specimen face (white highlight only brightens it)",
+      "ratio": 9.991936122519059
+    },
+    {
+      "foreground": "#3d6974",
+      "background": "#e6eef1 specimen face (white highlight only brightens it)",
+      "ratio": 5.146455774828245
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#071b2c active filter (outline does not cover text)",
+      "ratio": 17.468306856246148
+    }
+  ]
+}

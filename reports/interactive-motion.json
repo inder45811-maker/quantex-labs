@@ -1,0 +1,1378 @@
+{
+  "startedAt": "2026-10-02T16:48:34.067Z",
+  "origin": "http://127.0.0.1:4175",
+  "checks": [
+    {
+      "name": "Word reveal preserves heading text and emphasis",
+      "passed": true,
+      "details": {
+        "text": "A clearer path to peptide research.",
+        "words": [
+          "A",
+          "clearer",
+          "path",
+          "to",
+          "peptide",
+          "research."
+        ],
+        "masks": [
+          "inline-block",
+          "inline-block",
+          "inline-block",
+          "inline-block",
+          "inline-block",
+          "inline-block"
+        ],
+        "emphasis": [
+          {
+            "text": "peptide research.",
+            "display": "block"
+          }
+        ]
+      }
+    },
+    {
+      "name": "No motion overflow / @320",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "scroll": 320
+      }
+    },
+    {
+      "name": "No motion overflow / @390",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "No motion overflow / @768",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "scroll": 768
+      }
+    },
+    {
+      "name": "No motion overflow / @1440",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "name": "No motion overflow /products @320",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "scroll": 320
+      }
+    },
+    {
+      "name": "No motion overflow /products @390",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "No motion overflow /products @768",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "scroll": 768
+      }
+    },
+    {
+      "name": "No motion overflow /products @1440",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "name": "No motion overflow /products/bpc-157 @320",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "scroll": 320
+      }
+    },
+    {
+      "name": "No motion overflow /products/bpc-157 @390",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "No motion overflow /products/bpc-157 @768",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "scroll": 768
+      }
+    },
+    {
+      "name": "No motion overflow /products/bpc-157 @1440",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "name": "Card tilt/glow and magnetic button react to real pointer movement",
+      "passed": true,
+      "details": {
+        "before": "none",
+        "after": {
+          "transform": "matrix3d(1.01272, 0.00384165, -0.0678646, 6.78629e-05, 0, 1.01338, 0.0573648, -5.73633e-05, 0.0669688, -0.0563902, 0.99616, -0.000996135, 0, -9.98376, -0.565156, 1.00057)",
+          "tiltX": "3.24deg",
+          "tiltY": "3.84deg",
+          "glowX": "82.0%",
+          "glowY": "23.0%"
+        },
+        "magnet": {
+          "x": "3.24px",
+          "y": "-1.47px",
+          "transform": "matrix(1, 0, 0, 1, 3.23148, -5.45562)"
+        }
+      }
+    },
+    {
+      "name": "Filter outline follows selection and mobile resize",
+      "passed": true,
+      "details": [
+        {
+          "width": 1440,
+          "selected": {
+            "x": 390.40625,
+            "y": 738.59375,
+            "width": 138.078125,
+            "height": 44,
+            "top": 738.59375,
+            "right": 528.484375,
+            "bottom": 782.59375,
+            "left": 390.40625
+          },
+          "indicator": {
+            "x": 390,
+            "y": 738.59375,
+            "width": 138,
+            "height": 44,
+            "top": 738.59375,
+            "right": 528,
+            "bottom": 782.59375,
+            "left": 390
+          }
+        },
+        {
+          "width": 390,
+          "selected": {
+            "x": 198,
+            "y": 741.375,
+            "width": 176,
+            "height": 44,
+            "top": 741.375,
+            "right": 374,
+            "bottom": 785.375,
+            "left": 198
+          },
+          "indicator": {
+            "x": 198,
+            "y": 741.375,
+            "width": 176,
+            "height": 44,
+            "top": 741.375,
+            "right": 374,
+            "bottom": 785.375,
+            "left": 198
+          }
+        }
+      ]
+    },
+    {
+      "name": "Compound transition identities match the native detail navigation",
+      "passed": true,
+      "details": {
+        "identities": [
+          {
+            "slug": "bpc-157",
+            "name": "compound-bpc-157"
+          },
+          {
+            "slug": "tb-500",
+            "name": "compound-tb-500"
+          },
+          {
+            "slug": "ghk-cu",
+            "name": "compound-ghk-cu"
+          },
+          {
+            "slug": "ipamorelin",
+            "name": "compound-ipamorelin"
+          },
+          {
+            "slug": "cjc-1295",
+            "name": "compound-cjc-1295"
+          },
+          {
+            "slug": "mots-c",
+            "name": "compound-mots-c"
+          }
+        ],
+        "supported": true,
+        "nativeObserved": true,
+        "native": [
+          {
+            "kind": "pagereveal",
+            "at": 126.30000001192093,
+            "hasViewTransition": true,
+            "animations": []
+          },
+          {
+            "kind": "after pagereveal",
+            "at": 184.19999998807907,
+            "hasViewTransition": false,
+            "animations": [
+              {
+                "pseudoElement": "::view-transition-group(root)",
+                "name": "-ua-view-transition-group-anim-root",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(compound-bpc-157)",
+                "name": "-ua-view-transition-group-anim-compound-bpc-157",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(site-header)",
+                "name": "-ua-view-transition-group-anim-site-header",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(root)",
+                "name": "quantex-arrive",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(root)",
+                "name": "quantex-exit",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-in",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-tb-500)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ghk-cu)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ipamorelin)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-cjc-1295)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-mots-c)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              }
+            ]
+          },
+          {
+            "kind": "after pagereveal",
+            "at": 234.69999998807907,
+            "hasViewTransition": false,
+            "animations": [
+              {
+                "pseudoElement": "::view-transition-group(root)",
+                "name": "-ua-view-transition-group-anim-root",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(compound-bpc-157)",
+                "name": "-ua-view-transition-group-anim-compound-bpc-157",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(site-header)",
+                "name": "-ua-view-transition-group-anim-site-header",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(root)",
+                "name": "quantex-arrive",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(root)",
+                "name": "quantex-exit",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-in",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-tb-500)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ghk-cu)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ipamorelin)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-cjc-1295)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-mots-c)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              }
+            ]
+          },
+          {
+            "kind": "after pagereveal",
+            "at": 281.5,
+            "hasViewTransition": false,
+            "animations": [
+              {
+                "pseudoElement": "::view-transition-group(root)",
+                "name": "-ua-view-transition-group-anim-root",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(compound-bpc-157)",
+                "name": "-ua-view-transition-group-anim-compound-bpc-157",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(site-header)",
+                "name": "-ua-view-transition-group-anim-site-header",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(root)",
+                "name": "quantex-arrive",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(root)",
+                "name": "quantex-exit",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-in",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-tb-500)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ghk-cu)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ipamorelin)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-cjc-1295)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-mots-c)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              }
+            ]
+          },
+          {
+            "kind": "after pagereveal",
+            "at": 332.5,
+            "hasViewTransition": false,
+            "animations": [
+              {
+                "pseudoElement": "::view-transition-group(root)",
+                "name": "-ua-view-transition-group-anim-root",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(compound-bpc-157)",
+                "name": "-ua-view-transition-group-anim-compound-bpc-157",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(site-header)",
+                "name": "-ua-view-transition-group-anim-site-header",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(root)",
+                "name": "quantex-arrive",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(root)",
+                "name": "quantex-exit",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-in",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-tb-500)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ghk-cu)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ipamorelin)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-cjc-1295)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-mots-c)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              }
+            ]
+          },
+          {
+            "kind": "after pagereveal",
+            "at": 378.9000000357628,
+            "hasViewTransition": false,
+            "animations": [
+              {
+                "pseudoElement": "::view-transition-group(root)",
+                "name": "-ua-view-transition-group-anim-root",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(compound-bpc-157)",
+                "name": "-ua-view-transition-group-anim-compound-bpc-157",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(site-header)",
+                "name": "-ua-view-transition-group-anim-site-header",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(root)",
+                "name": "quantex-arrive",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(root)",
+                "name": "quantex-exit",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-in",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-tb-500)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ghk-cu)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ipamorelin)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-cjc-1295)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-mots-c)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              }
+            ]
+          },
+          {
+            "kind": "after pagereveal",
+            "at": 437.10000002384186,
+            "hasViewTransition": false,
+            "animations": [
+              {
+                "pseudoElement": "::view-transition-group(root)",
+                "name": "-ua-view-transition-group-anim-root",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(compound-bpc-157)",
+                "name": "-ua-view-transition-group-anim-compound-bpc-157",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(site-header)",
+                "name": "-ua-view-transition-group-anim-site-header",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(root)",
+                "name": "quantex-arrive",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(root)",
+                "name": "quantex-exit",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-in",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-tb-500)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ghk-cu)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ipamorelin)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-cjc-1295)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-mots-c)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              }
+            ]
+          },
+          {
+            "kind": "after pagereveal",
+            "at": 484.19999998807907,
+            "hasViewTransition": false,
+            "animations": [
+              {
+                "pseudoElement": "::view-transition-group(root)",
+                "name": "-ua-view-transition-group-anim-root",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(compound-bpc-157)",
+                "name": "-ua-view-transition-group-anim-compound-bpc-157",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(site-header)",
+                "name": "-ua-view-transition-group-anim-site-header",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(root)",
+                "name": "quantex-arrive",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(root)",
+                "name": "quantex-exit",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-in",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-tb-500)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ghk-cu)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ipamorelin)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-cjc-1295)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-mots-c)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              }
+            ]
+          },
+          {
+            "kind": "after pagereveal",
+            "at": 533.5,
+            "hasViewTransition": false,
+            "animations": [
+              {
+                "pseudoElement": "::view-transition-group(root)",
+                "name": "-ua-view-transition-group-anim-root",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(compound-bpc-157)",
+                "name": "-ua-view-transition-group-anim-compound-bpc-157",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(site-header)",
+                "name": "-ua-view-transition-group-anim-site-header",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(root)",
+                "name": "quantex-arrive",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(root)",
+                "name": "quantex-exit",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-in",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-tb-500)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ghk-cu)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ipamorelin)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-cjc-1295)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-mots-c)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              }
+            ]
+          },
+          {
+            "kind": "after pagereveal",
+            "at": 592.1999999880791,
+            "hasViewTransition": false,
+            "animations": [
+              {
+                "pseudoElement": "::view-transition-group(root)",
+                "name": "-ua-view-transition-group-anim-root",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(compound-bpc-157)",
+                "name": "-ua-view-transition-group-anim-compound-bpc-157",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(site-header)",
+                "name": "-ua-view-transition-group-anim-site-header",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(root)",
+                "name": "quantex-arrive",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(root)",
+                "name": "quantex-exit",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-in",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-tb-500)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ghk-cu)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ipamorelin)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-cjc-1295)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-mots-c)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              }
+            ]
+          },
+          {
+            "kind": "after pagereveal",
+            "at": 630.6999999880791,
+            "hasViewTransition": false,
+            "animations": [
+              {
+                "pseudoElement": "::view-transition-group(root)",
+                "name": "-ua-view-transition-group-anim-root",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(compound-bpc-157)",
+                "name": "-ua-view-transition-group-anim-compound-bpc-157",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-group(site-header)",
+                "name": "-ua-view-transition-group-anim-site-header",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(root)",
+                "name": "quantex-arrive",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(root)",
+                "name": "quantex-exit",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-in",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-tb-500)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ghk-cu)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ipamorelin)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-cjc-1295)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-mots-c)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "running"
+              }
+            ]
+          },
+          {
+            "kind": "after pagereveal",
+            "at": 776.6999999880791,
+            "hasViewTransition": false,
+            "animations": [
+              {
+                "pseudoElement": "::view-transition-group(root)",
+                "name": "-ua-view-transition-group-anim-root",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-group(compound-bpc-157)",
+                "name": "-ua-view-transition-group-anim-compound-bpc-157",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-group(site-header)",
+                "name": "-ua-view-transition-group-anim-site-header",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-new(root)",
+                "name": "quantex-arrive",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(root)",
+                "name": "quantex-exit",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-in",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-tb-500)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ghk-cu)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ipamorelin)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-cjc-1295)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-mots-c)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "finished"
+              }
+            ]
+          },
+          {
+            "kind": "after pagereveal",
+            "at": 776.9000000357628,
+            "hasViewTransition": false,
+            "animations": [
+              {
+                "pseudoElement": "::view-transition-group(root)",
+                "name": "-ua-view-transition-group-anim-root",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-group(compound-bpc-157)",
+                "name": "-ua-view-transition-group-anim-compound-bpc-157",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-group(site-header)",
+                "name": "-ua-view-transition-group-anim-site-header",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-new(root)",
+                "name": "quantex-arrive",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(root)",
+                "name": "quantex-exit",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-in",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-tb-500)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ghk-cu)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ipamorelin)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-cjc-1295)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-mots-c)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "finished"
+              }
+            ]
+          },
+          {
+            "kind": "after pagereveal",
+            "at": 779.4000000357628,
+            "hasViewTransition": false,
+            "animations": [
+              {
+                "pseudoElement": "::view-transition-group(root)",
+                "name": "-ua-view-transition-group-anim-root",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-group(compound-bpc-157)",
+                "name": "-ua-view-transition-group-anim-compound-bpc-157",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-group(site-header)",
+                "name": "-ua-view-transition-group-anim-site-header",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-new(root)",
+                "name": "quantex-arrive",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(root)",
+                "name": "quantex-exit",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-in",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-new(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-bpc-157)",
+                "name": "-ua-mix-blend-mode-plus-lighter",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-tb-500)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ghk-cu)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-ipamorelin)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-cjc-1295)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "finished"
+              },
+              {
+                "pseudoElement": "::view-transition-old(compound-mots-c)",
+                "name": "-ua-view-transition-fade-out",
+                "playState": "finished"
+              }
+            ]
+          }
+        ],
+        "note": "Native observations are recorded; absent compositor observations require visual review."
+      }
+    },
+    {
+      "name": "DNA arrival, pause guard, real pointer and scroll events",
+      "passed": true,
+      "details": {
+        "first": "d2012ef83604738807e5bf36364db8e1eb825b45a858f548f41d353b9f2cc781",
+        "arrived": "809883cd6d73d7257fbd692c7e2a764f8a3678785539a6a275aed60539cc4244",
+        "frozen": "1d1ac46224a2d1c5e51f91b5b37c2a6ecd2a609b07ed4426d673400ca00d5a97",
+        "pointerHash": "1eacef757c26b80fcb255da6bcc6bf2d35d94636782b81207d620afc4e1a175c",
+        "scrolledHash": "802a3401b1eb41019181348c3514c10fc238dcfb77bae8cd8542dae18fb1cdcd",
+        "pointerEvents": [
+          {
+            "actor": "actual pointer",
+            "at": 11509.800000011921,
+            "progress": 0,
+            "pointerX": 0.6390277438693577,
+            "pointerY": -0.2287500381469727
+          }
+        ],
+        "scrollEvents": [
+          {
+            "actor": "actual scroll",
+            "at": 13042,
+            "progress": 0.2922794117647059,
+            "pointerX": 0.6390277438693577,
+            "pointerY": -0.2287500381469727
+          }
+        ]
+      }
+    },
+    {
+      "name": "Offscreen scene stops regular RAF scheduling",
+      "passed": true,
+      "details": {
+        "before": {
+          "requested": 129,
+          "callbacks": 128,
+          "pending": 0
+        },
+        "after": {
+          "requested": 129,
+          "callbacks": 128,
+          "pending": 0
+        },
+        "requested": 0,
+        "callbacks": 0
+      }
+    },
+    {
+      "name": "Reduced motion ignores passive effects and retains manual keys",
+      "passed": true
+    },
+    {
+      "name": "No runtime errors",
+      "passed": true
+    }
+  ],
+  "sceneEvents": [
+    {
+      "actor": "load",
+      "at": 89.90000003576279,
+      "progress": 0,
+      "pointerX": 0,
+      "pointerY": 0
+    },
+    {
+      "actor": "load",
+      "at": 2477.900000035763,
+      "progress": 0,
+      "pointerX": 0,
+      "pointerY": 0
+    },
+    {
+      "actor": "paused synthetic probe",
+      "at": 9718.900000035763,
+      "progress": 1,
+      "pointerX": 1,
+      "pointerY": 1
+    },
+    {
+      "actor": "paused synthetic probe",
+      "at": 10955.800000011921,
+      "progress": 0,
+      "pointerX": 0,
+      "pointerY": 0
+    },
+    {
+      "actor": "actual pointer",
+      "at": 11509.800000011921,
+      "progress": 0,
+      "pointerX": 0.6390277438693577,
+      "pointerY": -0.2287500381469727
+    },
+    {
+      "actor": "actual scroll",
+      "at": 13042,
+      "progress": 0.2922794117647059,
+      "pointerX": 0.6390277438693577,
+      "pointerY": -0.2287500381469727
+    },
+    {
+      "actor": "actual scroll",
+      "at": 13715.400000035763,
+      "progress": 0,
+      "pointerX": 0.6390277438693577,
+      "pointerY": -0.2287500381469727
+    }
+  ],
+  "screenshots": [
+    "C:\\Users\\IReyat\\.codex\\visualizations\\2026\\10\\02\\01a0fc56-6255-7303-98d4-9f85bc25021a\\motion-upgrade\\interactive-arrival-start.png",
+    "C:\\Users\\IReyat\\.codex\\visualizations\\2026\\10\\02\\01a0fc56-6255-7303-98d4-9f85bc25021a\\motion-upgrade\\interactive-scene-desktop.png",
+    "C:\\Users\\IReyat\\.codex\\visualizations\\2026\\10\\02\\01a0fc56-6255-7303-98d4-9f85bc25021a\\motion-upgrade\\interactive-scene-mobile.png"
+  ],
+  "errors": [],
+  "rafMeasurements": [
+    {
+      "before": {
+        "requested": 129,
+        "callbacks": 128,
+        "pending": 0
+      },
+      "after": {
+        "requested": 129,
+        "callbacks": 128,
+        "pending": 0
+      },
+      "requested": 0,
+      "callbacks": 0
+    }
+  ],
+  "completedAt": "2026-10-02T16:49:50.904Z",
+  "passed": 20,
+  "failed": 0,
+  "success": true
+}
