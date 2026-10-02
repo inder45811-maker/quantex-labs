@@ -7,6 +7,6 @@
     "Confirm business contact information and ordering, delivery, returns and site policy content."
   ],
   "indexing": "Preview pages are noindex; sitemap contains no preview URLs.",
-  "access": "Audience is managed separately by Sites; this build does not change it.",
+  "access": "GitHub Pages publishes a public catalog preview. Noindex does not restrict access.",
   "pages": 13
 }
