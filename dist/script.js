@@ -59,6 +59,3 @@ const menu = document.querySelector(".menu-button");
 menu.addEventListener("click", () => { const open = menu.getAttribute("aria-expanded") !== "true"; menu.setAttribute("aria-expanded", String(open)); document.querySelector("#nav").classList.toggle("open", open); });
 document.querySelectorAll("#nav a").forEach(link => link.addEventListener("click", () => { menu.setAttribute("aria-expanded", "false"); document.querySelector("#nav").classList.remove("open"); }));
 render();
-window.setTimeout(() => {
-  if (!document.documentElement.classList.contains('has-webgl')) document.querySelector('#helix-stage')?.classList.add('helix-fallback');
-}, 3500);
