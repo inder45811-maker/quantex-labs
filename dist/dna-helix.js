@@ -158,7 +158,7 @@ reducedMotion.addEventListener('change',event=>{autoRotate=!event.matches;speed=
 addEventListener('pagehide',event=>{cancelAnimationFrame(frame);if(!event.persisted){renderer?.dispose();environment?.dispose();}});
 addEventListener('pageshow',event=>{if(event.persisted){lastTime=0;needsRender=true;requestAnimationFrame(animate);}});
 try {buildScene();}catch(error) {buildFallback();console.warn('Using canvas DNA renderer.',error);}
-resize();render();stage.classList.remove('helix-fallback');stage.dataset.model='paired-dna-double-helix';
+resize();render();stage.classList.remove('helix-fallback');document.documentElement.classList.add('has-webgl');stage.dataset.model='paired-dna-double-helix';
 new ResizeObserver(resize).observe(stage);
 new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(visible)needsRender=true;},{rootMargin:'80px'}).observe(stage);
 motionLabel();requestAnimationFrame(animate);
