@@ -24,7 +24,7 @@ node scripts/build-dna-fallback.mjs
 node scripts/verify-source.mjs
 ```
 
-`dist/` is the published output. `content/catalog.json` is the only catalog source. Edit product records there and rebuild instead of editing the generated HTML. Shared behavior and styles live in `dist/app.js`, `dist/motion.js`, `dist/dna-loader.js`, `dist/dna-helix.js` and `dist/styles.css`.
+`dist/` contains the shared assets and original Sites-format output. GitHub Pages publishes the separately generated `pages-dist/` directory. `content/catalog.json` is the only catalog source. Edit product records there and rebuild instead of editing the generated HTML. Shared behavior and styles live in `dist/app.js`, `dist/motion.js`, `dist/dna-loader.js`, `dist/dna-helix.js` and `dist/styles.css`.
 
 ## Current release status
 
