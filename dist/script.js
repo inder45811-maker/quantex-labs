@@ -19,7 +19,7 @@ function card(product, index) {
   return `<article class="product-card" style="--card-index:${index}">
     <div class="product-visual" aria-hidden="true"><span class="visual-orbit orbit-one"></span><span class="visual-orbit orbit-two"></span><span class="compound-code">${product.code}</span><span class="visual-corner">QL / ${String(index + 1).padStart(2, "0")}</span></div>
     <div class="product-meta"><span>${product.subtitle}</span><span>Sample listing</span></div>
-    <div class="product-title"><h3><a href="/products/${product.slug}.html">${name}</a></h3><span>${product.strength}</span></div>
+    <div class="product-title"><h3><a href="/products/${product.slug}">${name}</a></h3><span>${product.strength}</span></div>
     <button class="product-action" type="button" data-enquire="${name}">Enquire to purchase <span aria-hidden="true">↗</span></button>
   </article>`;
 }
@@ -45,7 +45,7 @@ function openGroup(productName) {
   } else {
     const connect = document.querySelector("#connect");
     if (connect) connect.scrollIntoView({ behavior: "smooth" });
-    else window.location.href = "/contact.html";
+    else window.location.href = "/contact";
   }
 }
 grid.addEventListener("click", event => {
